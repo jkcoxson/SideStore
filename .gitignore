@@ -28,3 +28,4 @@ xcuserdata
 
 ## Obj-C/Swift specific
 *.hmap
+/CodeSigning.xcconfig

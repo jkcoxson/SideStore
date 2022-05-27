@@ -427,6 +427,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B3598B62284197B200202ACC /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Build.xcconfig; sourceTree = "<group>"; };
+		B3598B63284197B200202ACC /* CodeSigning.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeSigning.xcconfig; sourceTree = "<group>"; };
 		B3C589792769C89C000792A2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		BF02419522F2199300129732 /* RefreshAttemptsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshAttemptsViewController.swift; sourceTree = "<group>"; };
 		BF0241A922F29CCD00129732 /* UserDefaults+AltServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AltServer.swift"; sourceTree = "<group>"; };
@@ -1355,6 +1357,8 @@
 		BFD247612284B9A500981D42 = {
 			isa = PBXGroup;
 			children = (
+				B3598B62284197B200202ACC /* Build.xcconfig */,
+				B3598B63284197B200202ACC /* CodeSigning.xcconfig */,
 				BFD2476C2284B9A500981D42 /* AltStore */,
 				BF66EE7F2501AE50007EE018 /* AltStoreCore */,
 				BF45868E229872EA00BD7491 /* AltServer */,
