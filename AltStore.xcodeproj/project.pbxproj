@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1962DCB828C1FE18001A716A /* secret_tunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1962DCB728C1FDF0001A716A /* secret_tunnel.h */; };
+		1962DCBA28C201A6001A716A /* libsecret_tunnel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1962DCB928C201A6001A716A /* libsecret_tunnel.a */; };
 		19A0524728C1F2B1006EC362 /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
 		19A0527028C1F750006EC362 /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A0524D28C1F750006EC362 /* endianness.h */; };
 		19A0527128C1F750006EC362 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A0524F28C1F750006EC362 /* utils.h */; };
@@ -542,6 +543,7 @@
 
 /* Begin PBXFileReference section */
 		1962DCB728C1FDF0001A716A /* secret_tunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secret_tunnel.h; sourceTree = "<group>"; };
+		1962DCB928C201A6001A716A /* libsecret_tunnel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecret_tunnel.a; path = "Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug/libsecret_tunnel.a"; sourceTree = "<group>"; };
 		19A0524B28C1F750006EC362 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
 		19A0524D28C1F750006EC362 /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
 		19A0524F28C1F750006EC362 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
@@ -983,6 +985,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1962DCBA28C201A6001A716A /* libsecret_tunnel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1879,6 +1882,7 @@
 		BFD247852284BB3300981D42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1962DCB928C201A6001A716A /* libsecret_tunnel.a */,
 				B39575F4284F29E20080B4FF /* Roxas.framework */,
 				D533E8B62727841800A9B5DD /* libAppleArchive.tbd */,
 				BF580497246A3D19008AE704 /* UIKit.framework */,
@@ -3215,6 +3219,10 @@
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = imobiledevice;
 				SDKROOT = macosx;
@@ -3252,6 +3260,10 @@
 					"\"$(SRCROOT)/Dependencies/libplist/libcnary/include\"",
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = imobiledevice;
