@@ -3218,10 +3218,15 @@
 					"\"$(SRCROOT)/Dependencies/libplist/libcnary/include\"",
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
+					"\"$(SRCROOT)/Dependencies/libimobiledevice-glue/include\"/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/Secret-Tunnel/target/aarch64-apple-ios/release",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = imobiledevice;
@@ -3260,10 +3265,15 @@
 					"\"$(SRCROOT)/Dependencies/libplist/libcnary/include\"",
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
+					"\"$(SRCROOT)/Dependencies/libimobiledevice-glue/include\"/**",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/Secret-Tunnel/target/aarch64-apple-ios/release",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = imobiledevice;
