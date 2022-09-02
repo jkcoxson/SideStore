@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1962DCB828C1FE18001A716A /* secret_tunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1962DCB728C1FDF0001A716A /* secret_tunnel.h */; };
-		1962DCBA28C201A6001A716A /* libsecret_tunnel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1962DCB928C201A6001A716A /* libsecret_tunnel.a */; };
+		1962DCBA28C201A6001A716A /* libsecret_tunnel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1962DCB928C201A6001A716A /* libsecret_tunnel.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		19A0524728C1F2B1006EC362 /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
 		19A0527028C1F750006EC362 /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A0524D28C1F750006EC362 /* endianness.h */; };
 		19A0527128C1F750006EC362 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A0524F28C1F750006EC362 /* utils.h */; };
