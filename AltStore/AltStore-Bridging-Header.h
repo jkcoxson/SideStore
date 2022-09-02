@@ -4,5 +4,6 @@
 
 #import "NSAttributedString+Markdown.h"
 #import "ALTAppPatcher.h"
+#import "secret_tunnel.h"
 
 #include "fragmentzip.h"
