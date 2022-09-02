@@ -16,3 +16,6 @@
 [submodule "Dependencies/libimobiledevice-glue"]
 	path = Dependencies/libimobiledevice-glue
 	url = https://github.com/libimobiledevice/libimobiledevice-glue.git
+[submodule "Dependencies/Secret-Tunnel"]
+	path = Dependencies/Secret-Tunnel
+	url = https://github.com/jkcoxson/Secret-Tunnel.git
