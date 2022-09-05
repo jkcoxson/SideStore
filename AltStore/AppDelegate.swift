@@ -78,6 +78,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ServerManager.shared.startDiscovering()
 
         SecureValueTransformer.register()
+        
+        var pairing_file = NSString(string: Bundle.Info.devicePairingFile)
+        var pairing_pointer = UnsafeMutablePointer<CChar>(mutating: pairing_file.utf8String)
+        
+        var res = start_usbmuxd(pairing_pointer)
+        print("Starting muxer: ", res)
 
         if UserDefaults.standard.firstLaunch == nil
         {
