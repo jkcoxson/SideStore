@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		195C77B328C5B59100CA8075 /* libminimuxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 195C77B228C5B59100CA8075 /* libminimuxer.a */; };
 		1962DCB828C1FE18001A716A /* secret_tunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1962DCB728C1FDF0001A716A /* secret_tunnel.h */; };
 		1962DCBA28C201A6001A716A /* libsecret_tunnel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1962DCB928C201A6001A716A /* libsecret_tunnel.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		19A0524728C1F2B1006EC362 /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
@@ -1058,7 +1057,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195C77B328C5B59100CA8075 /* libminimuxer.a in Frameworks */,
 				B3146ED2284F581E00BBC3FD /* Roxas.framework in Frameworks */,
 				D533E8B72727841800A9B5DD /* libAppleArchive.tbd in Frameworks */,
 				B3C395F9284F362400DA9E2F /* AppCenterCrashes in Frameworks */,
