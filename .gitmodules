@@ -19,3 +19,6 @@
 [submodule "Dependencies/Secret-Tunnel"]
 	path = Dependencies/Secret-Tunnel
 	url = https://github.com/jkcoxson/Secret-Tunnel.git
+[submodule "Dependencies/minimuxer"]
+	path = Dependencies/minimuxer
+	url = https://github.com/jkcoxson/minimuxer.git

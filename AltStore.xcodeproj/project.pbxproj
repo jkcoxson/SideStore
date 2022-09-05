@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		195C77B328C5B59100CA8075 /* libminimuxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 195C77B228C5B59100CA8075 /* libminimuxer.a */; };
 		1962DCB828C1FE18001A716A /* secret_tunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1962DCB728C1FDF0001A716A /* secret_tunnel.h */; };
 		1962DCBA28C201A6001A716A /* libsecret_tunnel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1962DCB928C201A6001A716A /* libsecret_tunnel.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		19A0524728C1F2B1006EC362 /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
@@ -60,6 +61,10 @@
 		19A052DE28C1FC0F006EC362 /* wireguard.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C628C1FC0F006EC362 /* wireguard.rs */; };
 		19A052DF28C1FC0F006EC362 /* packets.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C728C1FC0F006EC362 /* packets.rs */; };
 		19A052E028C1FC0F006EC362 /* bindings.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C828C1FC0F006EC362 /* bindings.rs */; };
+		19B4F62F28C5BE17001262F2 /* companion_proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F62E28C5BE17001262F2 /* companion_proxy.c */; };
+		19B4F63128C5BE39001262F2 /* preboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F63028C5BE39001262F2 /* preboard.c */; };
+		19B4F63328C5BEF8001262F2 /* jplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F63228C5BEF8001262F2 /* jplist.c */; };
+		19B4F63528C5BF79001262F2 /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F63428C5BF79001262F2 /* jsmn.c */; };
 		19B9B7452845E6DF0076EF69 /* SelectTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */; };
 		4879A95F2861046500FC1BBD /* AltSign in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A95E2861046500FC1BBD /* AltSign */; };
 		4879A9622861049C00FC1BBD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A9612861049C00FC1BBD /* OpenSSL */; };
@@ -542,6 +547,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		195C77A928C5A59500CA8075 /* minimuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimuxer.swift; sourceTree = "<group>"; };
+		195C77B228C5B59100CA8075 /* libminimuxer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libminimuxer.a; path = "../minimuxer/target/aarch64-apple-ios/debug/libminimuxer.a"; sourceTree = "<group>"; };
+		195C77BA28C5B6FE00CA8075 /* minimuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimuxer.swift; sourceTree = "<group>"; };
+		195C77BF28C5B71900CA8075 /* libminimuxer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libminimuxer.a; path = "Dependencies/minimuxer/target/aarch64-apple-ios/debug/libminimuxer.a"; sourceTree = "<group>"; };
 		1962DCB728C1FDF0001A716A /* secret_tunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secret_tunnel.h; sourceTree = "<group>"; };
 		1962DCB928C201A6001A716A /* libsecret_tunnel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecret_tunnel.a; path = "Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug/libsecret_tunnel.a"; sourceTree = "<group>"; };
 		19A0524B28C1F750006EC362 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
@@ -607,6 +616,10 @@
 		19A052C628C1FC0F006EC362 /* wireguard.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wireguard.rs; sourceTree = "<group>"; };
 		19A052C728C1FC0F006EC362 /* packets.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = packets.rs; sourceTree = "<group>"; };
 		19A052C828C1FC0F006EC362 /* bindings.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bindings.rs; sourceTree = "<group>"; };
+		19B4F62E28C5BE17001262F2 /* companion_proxy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = companion_proxy.c; path = Dependencies/libimobiledevice/src/companion_proxy.c; sourceTree = "<group>"; };
+		19B4F63028C5BE39001262F2 /* preboard.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = preboard.c; path = Dependencies/libimobiledevice/src/preboard.c; sourceTree = "<group>"; };
+		19B4F63228C5BEF8001262F2 /* jplist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jplist.c; path = Dependencies/libplist/src/jplist.c; sourceTree = "<group>"; };
+		19B4F63428C5BF79001262F2 /* jsmn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jsmn.c; path = Dependencies/libplist/src/jsmn.c; sourceTree = "<group>"; };
 		19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamViewController.swift; sourceTree = "<group>"; };
 		B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Roxas.xcodeproj; path = Dependencies/Roxas/Roxas.xcodeproj; sourceTree = "<group>"; };
 		B39575F4284F29E20080B4FF /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1069,6 +1082,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195C77A828C5A59500CA8075 /* minimuxer */ = {
+			isa = PBXGroup;
+			children = (
+				195C77A928C5A59500CA8075 /* minimuxer.swift */,
+			);
+			path = minimuxer;
+			sourceTree = "<group>";
+		};
+		195C77B928C5B6FE00CA8075 /* minimuxer */ = {
+			isa = PBXGroup;
+			children = (
+				195C77BA28C5B6FE00CA8075 /* minimuxer.swift */,
+			);
+			path = minimuxer;
+			sourceTree = "<group>";
+		};
 		19A0524A28C1F750006EC362 /* libimobiledevice-glue */ = {
 			isa = PBXGroup;
 			children = (
@@ -1806,6 +1835,10 @@
 		BFD247612284B9A500981D42 = {
 			isa = PBXGroup;
 			children = (
+				19B4F63428C5BF79001262F2 /* jsmn.c */,
+				19B4F63228C5BEF8001262F2 /* jplist.c */,
+				19B4F63028C5BE39001262F2 /* preboard.c */,
+				19B4F62E28C5BE17001262F2 /* companion_proxy.c */,
 				B3C39607284F4C8400DA9E2F /* Build.xcconfig */,
 				B3C39606284F4C8400DA9E2F /* CodeSigning.xcconfig */,
 				B3C39608284F4C8400DA9E2F /* CodeSigning.xcconfig.sample */,
@@ -1825,6 +1858,8 @@
 				BF18BFE824857D7900DD5981 /* AltDaemon */,
 				BF98916C250AABF3002ACF50 /* AltWidget */,
 				BFF7C905257844C900E55F36 /* AltXPC */,
+				195C77A828C5A59500CA8075 /* minimuxer */,
+				195C77B928C5B6FE00CA8075 /* minimuxer */,
 				BFD247852284BB3300981D42 /* Frameworks */,
 				B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */,
 				BFD2476B2284B9A500981D42 /* Products */,
@@ -1882,6 +1917,8 @@
 		BFD247852284BB3300981D42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				195C77B228C5B59100CA8075 /* libminimuxer.a */,
+				195C77BF28C5B71900CA8075 /* libminimuxer.a */,
 				1962DCB928C201A6001A716A /* libsecret_tunnel.a */,
 				B39575F4284F29E20080B4FF /* Roxas.framework */,
 				D533E8B62727841800A9B5DD /* libAppleArchive.tbd */,
@@ -2380,7 +2417,7 @@
 		BFD247622284B9A500981D42 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Riley Testut";
 				TargetAttributes = {
@@ -2664,6 +2701,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B4F63528C5BF79001262F2 /* jsmn.c in Sources */,
+				19B4F63328C5BEF8001262F2 /* jplist.c in Sources */,
+				19B4F63128C5BE39001262F2 /* preboard.c in Sources */,
+				19B4F62F28C5BE17001262F2 /* companion_proxy.c in Sources */,
 				BF45881B2298D3AB00BD7491 /* house_arrest.c in Sources */,
 				BFD52C0622A1A9CB000B7ED1 /* bplist.c in Sources */,
 				BF4588232298D3AB00BD7491 /* mobilesync.c in Sources */,
@@ -3223,6 +3264,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug",
+					"$(PROJECT_DIR)/Dependencies/minimuxer/target/aarch64-apple-ios/debug",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
@@ -3270,6 +3312,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug",
+					"$(PROJECT_DIR)/Dependencies/minimuxer/target/aarch64-apple-ios/debug",
 				);
 				"LIBRARY_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
@@ -3664,6 +3707,7 @@
 				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				DEVELOPMENT_TEAM = 4FW3Q8784L;
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Dependencies/minimuxer/**";
 				INFOPLIST_FILE = AltStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3674,6 +3718,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies/fragmentzip",
 					"$(PROJECT_DIR)/Dependencies/libcurl",
+					"$(PROJECT_DIR)/Dependencies/minimuxer/target/aarch64-apple-ios/debug",
 				);
 				MARKETING_VERSION = 1.5.1b;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
@@ -3700,6 +3745,7 @@
 				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				DEVELOPMENT_TEAM = 4FW3Q8784L;
 				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Dependencies/minimuxer/**";
 				INFOPLIST_FILE = AltStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3710,6 +3756,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies/fragmentzip",
 					"$(PROJECT_DIR)/Dependencies/libcurl",
+					"$(PROJECT_DIR)/Dependencies/minimuxer/target/aarch64-apple-ios/release",
 				);
 				MARKETING_VERSION = 1.5.1b;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
