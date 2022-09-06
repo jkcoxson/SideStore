@@ -35,6 +35,8 @@ jobs:
       - name: Build SideStore
         run: |
           export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
+          rm ./Dependencies/libplist/include/plist/string.h
+          rm ./Dependencies/libplist/include/plist/node.h
           rm -rf ~/Library/Developer/Xcode/DerivedData/
           rm ./AltStore.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved 
           cd ./Dependencies/Secret-Tunnel && cargo build --target aarch64-apple-ios --release && cd .. && cd ..
