@@ -79,15 +79,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         SecureValueTransformer.register()
         
-        var x = Bundle.main.object(forInfoDictionaryKey: "ALTPairingFile") as? String
+        target_minimuxer_address()
         
-        var pairing_file = NSString(string: x.unsafelyUnwrapped)
-        var pairing_pointer = UnsafeMutablePointer<CChar>(mutating: pairing_file.utf8String)
+        let x = Bundle.main.object(forInfoDictionaryKey: "ALTPairingFile") as? String
         
-        var res = start_usbmuxd(pairing_pointer)
+        let pairing_file = NSString(string: x.unsafelyUnwrapped)
+        let pairing_pointer = UnsafeMutablePointer<CChar>(mutating: pairing_file.utf8String)
+        
+        let res = start_usbmuxd(pairing_pointer)
         if res == -1 {
             fatalError("Invalid pairing file!")
         }
+        
+        let usbmuxd_env = ProcessInfo.processInfo.environment["USBMUXD_SOCKET_ADDRESS"].unsafelyUnwrapped
+        print("usbmuxd address: ", usbmuxd_env)
         print("Starting muxer: ", res)
 
         if UserDefaults.standard.firstLaunch == nil

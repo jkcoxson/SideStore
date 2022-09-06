@@ -54,10 +54,13 @@ class EnableJITOperation<Context: EnableJITContext>: ResultOperation<Void>
             let openAppURL = installedApp.openAppURL
             
             print("\n\n\n")
-            print(bundle.bundlePath)
+            print(installedApp.resignedBundleIdentifier)
             print("\n\n\n")
             
+            let id = NSString(string: installedApp.resignedBundleIdentifier)
+            let id_ptr = UnsafeMutablePointer<CChar>(mutating: id.utf8String)
             
+            minimuxer_debug_app(id_ptr)
             
 //            ServerManager.shared.connect(to: server) { result in
 //                switch result

@@ -6,5 +6,6 @@
 #import "ALTAppPatcher.h"
 #import "secret_tunnel.h"
 #import "minimuxer.h"
+#import "libimobiledevice.h"
 
 #include "fragmentzip.h"
