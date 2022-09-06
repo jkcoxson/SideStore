@@ -94,6 +94,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let usbmuxd_env = ProcessInfo.processInfo.environment["USBMUXD_SOCKET_ADDRESS"].unsafelyUnwrapped
         print("usbmuxd address: ", usbmuxd_env)
         print("Starting muxer: ", res)
+        
+        let host = NSString("10.7.0.1")
+        let host_pointer = UnsafeMutablePointer<CChar>(mutating: host.utf8String)
+        ping_wireguard_background(nil, host_pointer)
 
         if UserDefaults.standard.firstLaunch == nil
         {
