@@ -65,6 +65,8 @@
 		19B4F63328C5BEF8001262F2 /* jplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F63228C5BEF8001262F2 /* jplist.c */; };
 		19B4F63528C5BF79001262F2 /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F63428C5BF79001262F2 /* jsmn.c */; };
 		19B9B7452845E6DF0076EF69 /* SelectTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */; };
+		19D5DFB928C684B300FCAB19 /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 19D5DFB828C684B300FCAB19 /* plist.h */; };
+		19D7012728C6809100CD3B28 /* libimobiledevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 19D7012628C6809100CD3B28 /* libimobiledevice.h */; };
 		4879A95F2861046500FC1BBD /* AltSign in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A95E2861046500FC1BBD /* AltSign */; };
 		4879A9622861049C00FC1BBD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A9612861049C00FC1BBD /* OpenSSL */; };
 		B3146ED2284F581E00BBC3FD /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3146ECD284F580500BBC3FD /* Roxas.framework */; };
@@ -316,28 +318,16 @@
 		BFD52C0122A1A9CB000B7ED1 /* ptrarray.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BE522A1A9CA000B7ED1 /* ptrarray.c */; };
 		BFD52C0222A1A9CB000B7ED1 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BE622A1A9CA000B7ED1 /* base64.c */; };
 		BFD52C0322A1A9CB000B7ED1 /* hashtable.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BE722A1A9CA000B7ED1 /* hashtable.c */; };
-		BFD52C0422A1A9CB000B7ED1 /* Dictionary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BE822A1A9CA000B7ED1 /* Dictionary.cpp */; };
 		BFD52C0522A1A9CB000B7ED1 /* ptrarray.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD52BE922A1A9CA000B7ED1 /* ptrarray.h */; };
 		BFD52C0622A1A9CB000B7ED1 /* bplist.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BEA22A1A9CA000B7ED1 /* bplist.c */; };
-		BFD52C0722A1A9CB000B7ED1 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BEB22A1A9CA000B7ED1 /* String.cpp */; };
 		BFD52C0822A1A9CB000B7ED1 /* time64.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BEC22A1A9CA000B7ED1 /* time64.c */; };
 		BFD52C0922A1A9CB000B7ED1 /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD52BED22A1A9CA000B7ED1 /* plist.h */; };
 		BFD52C0A22A1A9CB000B7ED1 /* plist.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BEE22A1A9CA000B7ED1 /* plist.c */; };
 		BFD52C0B22A1A9CB000B7ED1 /* hashtable.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD52BEF22A1A9CA000B7ED1 /* hashtable.h */; };
-		BFD52C0C22A1A9CB000B7ED1 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BF022A1A9CA000B7ED1 /* Date.cpp */; };
-		BFD52C0D22A1A9CB000B7ED1 /* Uid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BF122A1A9CA000B7ED1 /* Uid.cpp */; };
-		BFD52C0E22A1A9CB000B7ED1 /* Boolean.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BF222A1A9CA000B7ED1 /* Boolean.cpp */; };
-		BFD52C0F22A1A9CB000B7ED1 /* Real.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BF322A1A9CA000B7ED1 /* Real.cpp */; };
 		BFD52C1022A1A9CB000B7ED1 /* strbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD52BF422A1A9CA000B7ED1 /* strbuf.h */; };
 		BFD52C1122A1A9CB000B7ED1 /* bytearray.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BF522A1A9CA000B7ED1 /* bytearray.c */; };
 		BFD52C1222A1A9CB000B7ED1 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD52BF622A1A9CA000B7ED1 /* base64.h */; };
-		BFD52C1322A1A9CB000B7ED1 /* Data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BF722A1A9CA000B7ED1 /* Data.cpp */; };
-		BFD52C1422A1A9CB000B7ED1 /* Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BF822A1A9CB000B7ED1 /* Array.cpp */; };
-		BFD52C1522A1A9CB000B7ED1 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BF922A1A9CB000B7ED1 /* Node.cpp */; };
 		BFD52C1622A1A9CB000B7ED1 /* bytearray.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD52BFA22A1A9CB000B7ED1 /* bytearray.h */; };
-		BFD52C1722A1A9CB000B7ED1 /* Key.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BFB22A1A9CB000B7ED1 /* Key.cpp */; };
-		BFD52C1822A1A9CB000B7ED1 /* Integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BFC22A1A9CB000B7ED1 /* Integer.cpp */; };
-		BFD52C1922A1A9CB000B7ED1 /* Structure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFD52BFD22A1A9CB000B7ED1 /* Structure.cpp */; };
 		BFD52C1A22A1A9CB000B7ED1 /* time64_limits.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD52BFE22A1A9CB000B7ED1 /* time64_limits.h */; };
 		BFD52C1B22A1A9CB000B7ED1 /* time64.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD52BFF22A1A9CB000B7ED1 /* time64.h */; };
 		BFD52C1C22A1A9CB000B7ED1 /* xplist.c in Sources */ = {isa = PBXBuildFile; fileRef = BFD52C0022A1A9CB000B7ED1 /* xplist.c */; };
@@ -620,6 +610,8 @@
 		19B4F63228C5BEF8001262F2 /* jplist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jplist.c; path = Dependencies/libplist/src/jplist.c; sourceTree = "<group>"; };
 		19B4F63428C5BF79001262F2 /* jsmn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jsmn.c; path = Dependencies/libplist/src/jsmn.c; sourceTree = "<group>"; };
 		19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamViewController.swift; sourceTree = "<group>"; };
+		19D5DFB828C684B300FCAB19 /* plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = plist.h; path = Dependencies/libplist/include/plist/plist.h; sourceTree = "<group>"; };
+		19D7012628C6809100CD3B28 /* libimobiledevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libimobiledevice.h; path = Dependencies/libimobiledevice/include/libimobiledevice/libimobiledevice.h; sourceTree = "<group>"; };
 		B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Roxas.xcodeproj; path = Dependencies/Roxas/Roxas.xcodeproj; sourceTree = "<group>"; };
 		B39575F4284F29E20080B4FF /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C39606284F4C8400DA9E2F /* CodeSigning.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeSigning.xcconfig; sourceTree = "<group>"; };
@@ -1834,6 +1826,8 @@
 		BFD247612284B9A500981D42 = {
 			isa = PBXGroup;
 			children = (
+				19D5DFB828C684B300FCAB19 /* plist.h */,
+				19D7012628C6809100CD3B28 /* libimobiledevice.h */,
 				19B4F63428C5BF79001262F2 /* jsmn.c */,
 				19B4F63228C5BEF8001262F2 /* jplist.c */,
 				19B4F63028C5BE39001262F2 /* preboard.c */,
@@ -2150,6 +2144,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D5DFB928C684B300FCAB19 /* plist.h in Headers */,
+				19D7012728C6809100CD3B28 /* libimobiledevice.h in Headers */,
 				1962DCB828C1FE18001A716A /* secret_tunnel.h in Headers */,
 				19A0529428C1F90E006EC362 /* thread.h in Headers */,
 				BF4588112298D3AB00BD7491 /* misagent.h in Headers */,
@@ -2714,45 +2710,35 @@
 				19A0527A28C1F750006EC362 /* collection.c in Sources */,
 				BF45880F2298D3AB00BD7491 /* debugserver.c in Sources */,
 				BF4588162298D3AB00BD7491 /* restore.c in Sources */,
-				BFD52C0422A1A9CB000B7ED1 /* Dictionary.cpp in Sources */,
 				BF4588412298D3F800BD7491 /* collection.c in Sources */,
 				BFD52C0222A1A9CB000B7ED1 /* base64.c in Sources */,
 				BFD52C2022A1A9EC000B7ED1 /* node.c in Sources */,
 				BF4588092298D3AB00BD7491 /* installation_proxy.c in Sources */,
 				BF4587FF2298D3AB00BD7491 /* heartbeat.c in Sources */,
 				BF4588222298D3AB00BD7491 /* mobileactivation.c in Sources */,
-				BFD52C1822A1A9CB000B7ED1 /* Integer.cpp in Sources */,
 				19A0527C28C1F750006EC362 /* socket.c in Sources */,
 				BF4588212298D3AB00BD7491 /* idevice.c in Sources */,
 				BFD52C1C22A1A9CB000B7ED1 /* xplist.c in Sources */,
 				BF4587F92298D3AB00BD7491 /* diagnostics_relay.c in Sources */,
 				BF4588062298D3AB00BD7491 /* webinspector.c in Sources */,
-				BFD52C1722A1A9CB000B7ED1 /* Key.cpp in Sources */,
 				BF45880D2298D3AB00BD7491 /* mobilebackup.c in Sources */,
-				BFD52C0C22A1A9CB000B7ED1 /* Date.cpp in Sources */,
 				BFD52C0A22A1A9CB000B7ED1 /* plist.c in Sources */,
-				BFD52C1322A1A9CB000B7ED1 /* Data.cpp in Sources */,
 				BF45883A2298D3C100BD7491 /* debug.c in Sources */,
 				19A0527F28C1F750006EC362 /* cbuf.c in Sources */,
-				BFD52C0F22A1A9CB000B7ED1 /* Real.cpp in Sources */,
 				19A0527D28C1F750006EC362 /* utils.c in Sources */,
 				19A0528228C1F750006EC362 /* glue.c in Sources */,
 				BF45884A2298D55000BD7491 /* thread.c in Sources */,
 				BF4587FB2298D3AB00BD7491 /* notification_proxy.c in Sources */,
 				BF4588352298D3C100BD7491 /* userpref.c in Sources */,
 				BFD52C0122A1A9CB000B7ED1 /* ptrarray.c in Sources */,
-				BFD52C0E22A1A9CB000B7ED1 /* Boolean.cpp in Sources */,
 				BFD52C0822A1A9CB000B7ED1 /* time64.c in Sources */,
 				BFD52C2122A1A9EC000B7ED1 /* node_list.c in Sources */,
-				BFD52C1422A1A9CB000B7ED1 /* Array.cpp in Sources */,
 				BF4588242298D3AB00BD7491 /* property_list_service.c in Sources */,
 				19A0528028C1F750006EC362 /* termcolors.c in Sources */,
 				BF45881E2298D3AB00BD7491 /* misagent.c in Sources */,
 				BF4587FC2298D3AB00BD7491 /* sbservices.c in Sources */,
-				BFD52C1522A1A9CB000B7ED1 /* Node.cpp in Sources */,
 				BF4588142298D3AB00BD7491 /* device_link_service.c in Sources */,
 				BF4588172298D3AB00BD7491 /* screenshotr.c in Sources */,
-				BFD52C0D22A1A9CB000B7ED1 /* Uid.cpp in Sources */,
 				19A0527B28C1F750006EC362 /* tlv.c in Sources */,
 				BFD52C0322A1A9CB000B7ED1 /* hashtable.c in Sources */,
 				BF4588432298D40000BD7491 /* libusbmuxd.c in Sources */,
@@ -2760,11 +2746,9 @@
 				19A0527928C1F750006EC362 /* thread.c in Sources */,
 				BF4588272298D3AB00BD7491 /* service.c in Sources */,
 				19A0528128C1F750006EC362 /* opack.c in Sources */,
-				BFD52C0722A1A9CB000B7ED1 /* String.cpp in Sources */,
 				BF4588262298D3AB00BD7491 /* lockdown.c in Sources */,
 				BFD52C2222A1A9EC000B7ED1 /* cnary.c in Sources */,
 				BF45880C2298D3AB00BD7491 /* mobilebackup2.c in Sources */,
-				BFD52C1922A1A9CB000B7ED1 /* Structure.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3249,7 +3233,7 @@
 				);
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Dependencies/libplist/include\"",
+					"\"$(SRCROOT)/Dependencies/libplist/include\"/**",
 					"\"$(SRCROOT)/Dependencies/libimobiledevice\"",
 					"\"$(SRCROOT)/Dependencies/libimobiledevice/include\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/OpenSSL/macosx/include\"",
@@ -3259,6 +3243,7 @@
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
 					"\"$(SRCROOT)/Dependencies/libimobiledevice-glue/include\"/**",
+					"\"$(SRCROOT)/Dependencies/libplist/include/plist\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3273,6 +3258,10 @@
 				PRODUCT_NAME = imobiledevice;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies\"",
+					"\"$(SRCROOT)/Dependencies/libplist/include\"/**",
+				);
 			};
 			name = Debug;
 		};
@@ -3297,7 +3286,7 @@
 				);
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = (
-					"\"$(SRCROOT)/Dependencies/libplist/include\"",
+					"\"$(SRCROOT)/Dependencies/libplist/include\"/**",
 					"\"$(SRCROOT)/Dependencies/libimobiledevice\"",
 					"\"$(SRCROOT)/Dependencies/libimobiledevice/include\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/OpenSSL/macosx/include\"",
@@ -3307,6 +3296,7 @@
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
 					"\"$(SRCROOT)/Dependencies/libimobiledevice-glue/include\"/**",
+					"\"$(SRCROOT)/Dependencies/libplist/include/plist\"",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3321,6 +3311,10 @@
 				PRODUCT_NAME = imobiledevice;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies\"",
+					"\"$(SRCROOT)/Dependencies/libplist/include\"/**",
+				);
 			};
 			name = Release;
 		};
@@ -3706,7 +3700,10 @@
 				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				DEVELOPMENT_TEAM = 4FW3Q8784L;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Dependencies/minimuxer/**";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Dependencies/minimuxer/**",
+					"$(PROJECT_DIR)/Dependencies/libplist/include",
+				);
 				INFOPLIST_FILE = AltStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -3744,7 +3741,10 @@
 				DEVELOPMENT_TEAM = "$(DEVELOPMENT_TEAM)";
 				DEVELOPMENT_TEAM = 4FW3Q8784L;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Dependencies/minimuxer/**";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Dependencies/minimuxer/**",
+					"$(PROJECT_DIR)/Dependencies/libplist/include",
+				);
 				INFOPLIST_FILE = AltStore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
