@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1962DCB828C1FE18001A716A /* secret_tunnel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1962DCB728C1FDF0001A716A /* secret_tunnel.h */; };
 		1962DCBA28C201A6001A716A /* libsecret_tunnel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1962DCB928C201A6001A716A /* libsecret_tunnel.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		19A0524728C1F2B1006EC362 /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
 		19A0527028C1F750006EC362 /* endianness.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A0524D28C1F750006EC362 /* endianness.h */; };
@@ -37,7 +38,35 @@
 		19A0529528C1F90E006EC362 /* collection.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A0528B28C1F90E006EC362 /* collection.h */; };
 		19A0529628C1F90E006EC362 /* socket.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A0528C28C1F90E006EC362 /* socket.h */; };
 		19A0529728C1F90E006EC362 /* tlv.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A0528D28C1F90E006EC362 /* tlv.h */; };
+		19A052C928C1FC0F006EC362 /* Cargo.toml in Resources */ = {isa = PBXBuildFile; fileRef = 19A052AE28C1FC0F006EC362 /* Cargo.toml */; };
+		19A052CA28C1FC0F006EC362 /* udp_server.js in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B028C1FC0F006EC362 /* udp_server.js */; };
+		19A052CB28C1FC0F006EC362 /* udp_client.js in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B128C1FC0F006EC362 /* udp_client.js */; };
+		19A052CC28C1FC0F006EC362 /* tcp_client.js in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B228C1FC0F006EC362 /* tcp_client.js */; };
+		19A052CD28C1FC0F006EC362 /* tcp_server.js in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B328C1FC0F006EC362 /* tcp_server.js */; };
+		19A052CE28C1FC0F006EC362 /* cbindgen.toml in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B428C1FC0F006EC362 /* cbindgen.toml */; };
+		19A052CF28C1FC0F006EC362 /* secret_tunnel.pc in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B528C1FC0F006EC362 /* secret_tunnel.pc */; };
+		19A052D028C1FC0F006EC362 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B628C1FC0F006EC362 /* install.sh */; };
+		19A052D128C1FC0F006EC362 /* Cargo.lock in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B728C1FC0F006EC362 /* Cargo.lock */; };
+		19A052D228C1FC0F006EC362 /* build.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052B828C1FC0F006EC362 /* build.rs */; };
+		19A052D428C1FC0F006EC362 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 19A052BA28C1FC0F006EC362 /* .gitignore */; };
+		19A052D528C1FC0F006EC362 /* server_publickey_client in Resources */ = {isa = PBXBuildFile; fileRef = 19A052BC28C1FC0F006EC362 /* server_publickey_client */; };
+		19A052D628C1FC0F006EC362 /* secret-tunnel.conf in Resources */ = {isa = PBXBuildFile; fileRef = 19A052BD28C1FC0F006EC362 /* secret-tunnel.conf */; };
+		19A052D728C1FC0F006EC362 /* client_privatekey in Resources */ = {isa = PBXBuildFile; fileRef = 19A052BE28C1FC0F006EC362 /* client_privatekey */; };
+		19A052D928C1FC0F006EC362 /* server_privatekey in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C028C1FC0F006EC362 /* server_privatekey */; };
+		19A052DA28C1FC0F006EC362 /* client_publickey in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C128C1FC0F006EC362 /* client_publickey */; };
+		19A052DB28C1FC0F006EC362 /* handle.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C328C1FC0F006EC362 /* handle.rs */; };
+		19A052DC28C1FC0F006EC362 /* lib.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C428C1FC0F006EC362 /* lib.rs */; };
+		19A052DD28C1FC0F006EC362 /* event.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C528C1FC0F006EC362 /* event.rs */; };
+		19A052DE28C1FC0F006EC362 /* wireguard.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C628C1FC0F006EC362 /* wireguard.rs */; };
+		19A052DF28C1FC0F006EC362 /* packets.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C728C1FC0F006EC362 /* packets.rs */; };
+		19A052E028C1FC0F006EC362 /* bindings.rs in Resources */ = {isa = PBXBuildFile; fileRef = 19A052C828C1FC0F006EC362 /* bindings.rs */; };
+		19B4F62F28C5BE17001262F2 /* companion_proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F62E28C5BE17001262F2 /* companion_proxy.c */; };
+		19B4F63128C5BE39001262F2 /* preboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F63028C5BE39001262F2 /* preboard.c */; };
+		19B4F63328C5BEF8001262F2 /* jplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F63228C5BEF8001262F2 /* jplist.c */; };
+		19B4F63528C5BF79001262F2 /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = 19B4F63428C5BF79001262F2 /* jsmn.c */; };
 		19B9B7452845E6DF0076EF69 /* SelectTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */; };
+		19D5DFB928C684B300FCAB19 /* plist.h in Headers */ = {isa = PBXBuildFile; fileRef = 19D5DFB828C684B300FCAB19 /* plist.h */; };
+		19D7012728C6809100CD3B28 /* libimobiledevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 19D7012628C6809100CD3B28 /* libimobiledevice.h */; };
 		4879A95F2861046500FC1BBD /* AltSign in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A95E2861046500FC1BBD /* AltSign */; };
 		4879A9622861049C00FC1BBD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A9612861049C00FC1BBD /* OpenSSL */; };
 		B3146ED2284F581E00BBC3FD /* Roxas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3146ECD284F580500BBC3FD /* Roxas.framework */; };
@@ -507,8 +536,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		195C77A928C5A59500CA8075 /* minimuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimuxer.swift; sourceTree = "<group>"; };
 		195C77B228C5B59100CA8075 /* libminimuxer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libminimuxer.a; path = "../minimuxer/target/aarch64-apple-ios/debug/libminimuxer.a"; sourceTree = "<group>"; };
+		195C77BA28C5B6FE00CA8075 /* minimuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimuxer.swift; sourceTree = "<group>"; };
 		195C77BF28C5B71900CA8075 /* libminimuxer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libminimuxer.a; path = "Dependencies/minimuxer/target/aarch64-apple-ios/debug/libminimuxer.a"; sourceTree = "<group>"; };
+		1962DCB728C1FDF0001A716A /* secret_tunnel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secret_tunnel.h; sourceTree = "<group>"; };
 		1962DCB928C201A6001A716A /* libsecret_tunnel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsecret_tunnel.a; path = "Dependencies/Secret-Tunnel/target/aarch64-apple-ios/debug/libsecret_tunnel.a"; sourceTree = "<group>"; };
 		19A0524B28C1F750006EC362 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
 		19A0524D28C1F750006EC362 /* endianness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = endianness.h; sourceTree = "<group>"; };
@@ -551,7 +583,35 @@
 		19A0528C28C1F90E006EC362 /* socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = socket.h; sourceTree = "<group>"; };
 		19A0528D28C1F90E006EC362 /* tlv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tlv.h; sourceTree = "<group>"; };
 		19A0528E28C1F90E006EC362 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		19A052AE28C1FC0F006EC362 /* Cargo.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.toml; sourceTree = "<group>"; };
+		19A052B028C1FC0F006EC362 /* udp_server.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = udp_server.js; sourceTree = "<group>"; };
+		19A052B128C1FC0F006EC362 /* udp_client.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = udp_client.js; sourceTree = "<group>"; };
+		19A052B228C1FC0F006EC362 /* tcp_client.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tcp_client.js; sourceTree = "<group>"; };
+		19A052B328C1FC0F006EC362 /* tcp_server.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = tcp_server.js; sourceTree = "<group>"; };
+		19A052B428C1FC0F006EC362 /* cbindgen.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cbindgen.toml; sourceTree = "<group>"; };
+		19A052B528C1FC0F006EC362 /* secret_tunnel.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secret_tunnel.pc; sourceTree = "<group>"; };
+		19A052B628C1FC0F006EC362 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
+		19A052B728C1FC0F006EC362 /* Cargo.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.lock; sourceTree = "<group>"; };
+		19A052B828C1FC0F006EC362 /* build.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build.rs; sourceTree = "<group>"; };
+		19A052BA28C1FC0F006EC362 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		19A052BC28C1FC0F006EC362 /* server_publickey_client */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = server_publickey_client; sourceTree = "<group>"; };
+		19A052BD28C1FC0F006EC362 /* secret-tunnel.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "secret-tunnel.conf"; sourceTree = "<group>"; };
+		19A052BE28C1FC0F006EC362 /* client_privatekey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = client_privatekey; sourceTree = "<group>"; };
+		19A052C028C1FC0F006EC362 /* server_privatekey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = server_privatekey; sourceTree = "<group>"; };
+		19A052C128C1FC0F006EC362 /* client_publickey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = client_publickey; sourceTree = "<group>"; };
+		19A052C328C1FC0F006EC362 /* handle.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = handle.rs; sourceTree = "<group>"; };
+		19A052C428C1FC0F006EC362 /* lib.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
+		19A052C528C1FC0F006EC362 /* event.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = event.rs; sourceTree = "<group>"; };
+		19A052C628C1FC0F006EC362 /* wireguard.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wireguard.rs; sourceTree = "<group>"; };
+		19A052C728C1FC0F006EC362 /* packets.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = packets.rs; sourceTree = "<group>"; };
+		19A052C828C1FC0F006EC362 /* bindings.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bindings.rs; sourceTree = "<group>"; };
+		19B4F62E28C5BE17001262F2 /* companion_proxy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = companion_proxy.c; path = Dependencies/libimobiledevice/src/companion_proxy.c; sourceTree = "<group>"; };
+		19B4F63028C5BE39001262F2 /* preboard.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = preboard.c; path = Dependencies/libimobiledevice/src/preboard.c; sourceTree = "<group>"; };
+		19B4F63228C5BEF8001262F2 /* jplist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jplist.c; path = Dependencies/libplist/src/jplist.c; sourceTree = "<group>"; };
+		19B4F63428C5BF79001262F2 /* jsmn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jsmn.c; path = Dependencies/libplist/src/jsmn.c; sourceTree = "<group>"; };
 		19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamViewController.swift; sourceTree = "<group>"; };
+		19D5DFB828C684B300FCAB19 /* plist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = plist.h; path = Dependencies/libplist/include/plist/plist.h; sourceTree = "<group>"; };
+		19D7012628C6809100CD3B28 /* libimobiledevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libimobiledevice.h; path = Dependencies/libimobiledevice/include/libimobiledevice/libimobiledevice.h; sourceTree = "<group>"; };
 		B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Roxas.xcodeproj; path = Dependencies/Roxas/Roxas.xcodeproj; sourceTree = "<group>"; };
 		B39575F4284F29E20080B4FF /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C39606284F4C8400DA9E2F /* CodeSigning.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CodeSigning.xcconfig; sourceTree = "<group>"; };
@@ -1013,6 +1073,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195C77A828C5A59500CA8075 /* minimuxer */ = {
+			isa = PBXGroup;
+			children = (
+				195C77A928C5A59500CA8075 /* minimuxer.swift */,
+			);
+			path = minimuxer;
+			sourceTree = "<group>";
+		};
+		195C77B928C5B6FE00CA8075 /* minimuxer */ = {
+			isa = PBXGroup;
+			children = (
+				195C77BA28C5B6FE00CA8075 /* minimuxer.swift */,
+			);
+			path = minimuxer;
+			sourceTree = "<group>";
+		};
 		19A0524A28C1F750006EC362 /* libimobiledevice-glue */ = {
 			isa = PBXGroup;
 			children = (
@@ -1126,6 +1202,61 @@
 			path = "libimobiledevice-glue";
 			sourceTree = "<group>";
 		};
+		19A052AD28C1FC0F006EC362 /* Secret-Tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				1962DCB728C1FDF0001A716A /* secret_tunnel.h */,
+				19A052AE28C1FC0F006EC362 /* Cargo.toml */,
+				19A052AF28C1FC0F006EC362 /* tools */,
+				19A052B428C1FC0F006EC362 /* cbindgen.toml */,
+				19A052B528C1FC0F006EC362 /* secret_tunnel.pc */,
+				19A052B628C1FC0F006EC362 /* install.sh */,
+				19A052B728C1FC0F006EC362 /* Cargo.lock */,
+				19A052B828C1FC0F006EC362 /* build.rs */,
+				19A052BA28C1FC0F006EC362 /* .gitignore */,
+				19A052BB28C1FC0F006EC362 /* wireguard_keys */,
+				19A052C228C1FC0F006EC362 /* src */,
+			);
+			name = "Secret-Tunnel";
+			path = "Dependencies/Secret-Tunnel";
+			sourceTree = SOURCE_ROOT;
+		};
+		19A052AF28C1FC0F006EC362 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				19A052B028C1FC0F006EC362 /* udp_server.js */,
+				19A052B128C1FC0F006EC362 /* udp_client.js */,
+				19A052B228C1FC0F006EC362 /* tcp_client.js */,
+				19A052B328C1FC0F006EC362 /* tcp_server.js */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		19A052BB28C1FC0F006EC362 /* wireguard_keys */ = {
+			isa = PBXGroup;
+			children = (
+				19A052BC28C1FC0F006EC362 /* server_publickey_client */,
+				19A052BD28C1FC0F006EC362 /* secret-tunnel.conf */,
+				19A052BE28C1FC0F006EC362 /* client_privatekey */,
+				19A052C028C1FC0F006EC362 /* server_privatekey */,
+				19A052C128C1FC0F006EC362 /* client_publickey */,
+			);
+			path = wireguard_keys;
+			sourceTree = "<group>";
+		};
+		19A052C228C1FC0F006EC362 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				19A052C328C1FC0F006EC362 /* handle.rs */,
+				19A052C428C1FC0F006EC362 /* lib.rs */,
+				19A052C528C1FC0F006EC362 /* event.rs */,
+				19A052C628C1FC0F006EC362 /* wireguard.rs */,
+				19A052C728C1FC0F006EC362 /* packets.rs */,
+				19A052C828C1FC0F006EC362 /* bindings.rs */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		B3146EC7284F580500BBC3FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1234,6 +1365,7 @@
 		BF45872C2298D31600BD7491 /* libimobiledevice */ = {
 			isa = PBXGroup;
 			children = (
+				19A052AD28C1FC0F006EC362 /* Secret-Tunnel */,
 				19A0528328C1F90E006EC362 /* include */,
 				19A0524A28C1F750006EC362 /* libimobiledevice-glue */,
 				BF4588562298DC6D00BD7491 /* libplist */,
@@ -1694,6 +1826,12 @@
 		BFD247612284B9A500981D42 = {
 			isa = PBXGroup;
 			children = (
+				19D5DFB828C684B300FCAB19 /* plist.h */,
+				19D7012628C6809100CD3B28 /* libimobiledevice.h */,
+				19B4F63428C5BF79001262F2 /* jsmn.c */,
+				19B4F63228C5BEF8001262F2 /* jplist.c */,
+				19B4F63028C5BE39001262F2 /* preboard.c */,
+				19B4F62E28C5BE17001262F2 /* companion_proxy.c */,
 				B3C39607284F4C8400DA9E2F /* Build.xcconfig */,
 				B3C39606284F4C8400DA9E2F /* CodeSigning.xcconfig */,
 				B3C39608284F4C8400DA9E2F /* CodeSigning.xcconfig.sample */,
@@ -1713,6 +1851,8 @@
 				BF18BFE824857D7900DD5981 /* AltDaemon */,
 				BF98916C250AABF3002ACF50 /* AltWidget */,
 				BFF7C905257844C900E55F36 /* AltXPC */,
+				195C77A828C5A59500CA8075 /* minimuxer */,
+				195C77B928C5B6FE00CA8075 /* minimuxer */,
 				BFD247852284BB3300981D42 /* Frameworks */,
 				B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */,
 				BFD2476B2284B9A500981D42 /* Products */,
@@ -2004,6 +2144,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D5DFB928C684B300FCAB19 /* plist.h in Headers */,
+				19D7012728C6809100CD3B28 /* libimobiledevice.h in Headers */,
+				1962DCB828C1FE18001A716A /* secret_tunnel.h in Headers */,
 				19A0529428C1F90E006EC362 /* thread.h in Headers */,
 				BF4588112298D3AB00BD7491 /* misagent.h in Headers */,
 				BF4588042298D3AB00BD7491 /* lockdown.h in Headers */,
@@ -2437,17 +2580,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A052CF28C1FC0F006EC362 /* secret_tunnel.pc in Resources */,
+				19A052CC28C1FC0F006EC362 /* tcp_client.js in Resources */,
+				19A052CD28C1FC0F006EC362 /* tcp_server.js in Resources */,
+				19A052C928C1FC0F006EC362 /* Cargo.toml in Resources */,
 				BFC57A702416FC7600EB891E /* InstalledAppsCollectionHeaderView.xib in Resources */,
+				19A052E028C1FC0F006EC362 /* bindings.rs in Resources */,
+				19A052CE28C1FC0F006EC362 /* cbindgen.toml in Resources */,
+				19A052D428C1FC0F006EC362 /* .gitignore in Resources */,
+				19A052D628C1FC0F006EC362 /* secret-tunnel.conf in Resources */,
+				19A052D728C1FC0F006EC362 /* client_privatekey in Resources */,
+				19A052D928C1FC0F006EC362 /* server_privatekey in Resources */,
+				19A052DB28C1FC0F006EC362 /* handle.rs in Resources */,
+				19A052DD28C1FC0F006EC362 /* event.rs in Resources */,
 				BFB4323F22DE852000B7F8BC /* UpdateCollectionViewCell.xib in Resources */,
+				19A052CB28C1FC0F006EC362 /* udp_client.js in Resources */,
+				19A052DC28C1FC0F006EC362 /* lib.rs in Resources */,
 				BFE60738231ADF49002B0E8E /* Settings.storyboard in Resources */,
 				D57DF638271E32F000677701 /* PatchApp.storyboard in Resources */,
 				BFD2477A2284B9A700981D42 /* LaunchScreen.storyboard in Resources */,
 				BF44EEF3246B3A17002A52F2 /* AltBackup.ipa in Resources */,
+				19A052D228C1FC0F006EC362 /* build.rs in Resources */,
 				BF770E6922BD57DD002A40FE /* Silence.m4a in Resources */,
+				19A052D128C1FC0F006EC362 /* Cargo.lock in Resources */,
+				19A052D028C1FC0F006EC362 /* install.sh in Resources */,
 				BFD247772284B9A700981D42 /* Assets.xcassets in Resources */,
+				19A052DA28C1FC0F006EC362 /* client_publickey in Resources */,
 				BFF0B6922321A305007A79E1 /* AboutPatreonHeaderView.xib in Resources */,
+				19A052DF28C1FC0F006EC362 /* packets.rs in Resources */,
+				19A052CA28C1FC0F006EC362 /* udp_server.js in Resources */,
 				BFB6B22423187A3D0022A802 /* NewsCollectionViewCell.xib in Resources */,
 				BFD247752284B9A500981D42 /* Main.storyboard in Resources */,
+				19A052DE28C1FC0F006EC362 /* wireguard.rs in Resources */,
+				19A052D528C1FC0F006EC362 /* server_publickey_client in Resources */,
 				BFDB5B2622EFBBEA00F74113 /* BrowseCollectionViewCell.xib in Resources */,
 				BFE6073C231AE1E7002B0E8E /* SettingsHeaderFooterView.xib in Resources */,
 				BF29012F2318F6B100D88A45 /* AppBannerView.xib in Resources */,
@@ -2531,6 +2696,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B4F63528C5BF79001262F2 /* jsmn.c in Sources */,
+				19B4F63328C5BEF8001262F2 /* jplist.c in Sources */,
+				19B4F63128C5BE39001262F2 /* preboard.c in Sources */,
+				19B4F62F28C5BE17001262F2 /* companion_proxy.c in Sources */,
 				BF45881B2298D3AB00BD7491 /* house_arrest.c in Sources */,
 				BFD52C0622A1A9CB000B7ED1 /* bplist.c in Sources */,
 				BF4588232298D3AB00BD7491 /* mobilesync.c in Sources */,
@@ -3350,7 +3519,6 @@
 					"@executable_path/../../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_BUNDLE_IDENTIFIER)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = com.jkcoxson.AltStore.AltWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
