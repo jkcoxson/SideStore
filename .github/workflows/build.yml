@@ -35,7 +35,7 @@ jobs:
         run: |
           rm -rf ~/Library/Developer/Xcode/DerivedData/
           rm ./AltStore.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved 
-          cargo build --manifest-path= Dependencies/Secret-Tunnel/Cargo.toml --target aarch64-apple-ios --release
+          cd ./Dependencies/Secret-Tunnel && cargo build --target aarch64-apple-ios --release && cd .. && cd ..
           xcodebuild -project AltStore.xcodeproj -scheme AltStore -sdk iphoneos archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=XYZ0123456 ORG_IDENTIFIER=com.SideStore | xcpretty && exit ${PIPESTATUS[0]}
       - name: Fakesign app
         run: | 
