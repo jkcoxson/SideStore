@@ -13,6 +13,7 @@ public extension Bundle
     struct Info
     {
         public static let deviceID = "ALTDeviceID"
+        public static let devicePairingFile = "ALTPairingFile"
         public static let serverID = "ALTServerID"
         public static let certificateID = "ALTCertificateID"
         public static let appGroups = "ALTAppGroups"

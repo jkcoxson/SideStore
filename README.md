@@ -43,7 +43,8 @@ AltStore and AltServer are both fairly straightforward to compile and run if you
 5. Copy `CodeSigning.xcconfig.sample` to `CodeSigning.xcconfig`
 6. Fill out all of the properties in `CodeSigning.xcconfig` to match your account.
 7. In `Shared/Extensions/Bundle+AltStore.swift`, replace "group.com.rileytestut.AltStore" with your own App Group ID. 
-8. Build + run app! 🎉
+8. In `Dependencies/Secret-Tunnel`, run `cargo build --target aarch64-apple-ios --release`.
+9. Build + run app! 🎉
 
 ## Licensing
 

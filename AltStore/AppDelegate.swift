@@ -78,6 +78,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ServerManager.shared.startDiscovering()
 
         SecureValueTransformer.register()
+        
+        var x = Bundle.main.object(forInfoDictionaryKey: "ALTPairingFile") as? String
+        
+        var pairing_file = NSString(string: x.unsafelyUnwrapped)
+        var pairing_pointer = UnsafeMutablePointer<CChar>(mutating: pairing_file.utf8String)
+        
+        var res = start_usbmuxd(pairing_pointer)
+        if res == -1 {
+            fatalError("Invalid pairing file!")
+        }
+        print("Starting muxer: ", res)
 
         if UserDefaults.standard.firstLaunch == nil
         {

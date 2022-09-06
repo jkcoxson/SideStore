@@ -8,7 +8,9 @@
 		<string>group.com.rileytestut.AltStore</string>
 	</array>
 	<key>ALTDeviceID</key>
-	<string>00008101-000129D63698001E</string>
+	<string>00008101-00156C420221001E</string>
+	<key>ALTPairingFile</key>
+	<string>&lt;plist here&gt;</string>
 	<key>ALTServerID</key>
 	<string>1F7D5B55-79CE-4546-A029-D4DDC4AF3B6D</string>
 	<key>CFBundleDevelopmentRegion</key>
