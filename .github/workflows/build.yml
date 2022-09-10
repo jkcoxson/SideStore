@@ -23,15 +23,21 @@ jobs:
         with:
           submodules: recursive
       - name: Install dependencies
-        run: brew install ldid
+        run: |
+          brew install ldid
+          curl https://sh.rustup.rs -sSf | sh -s -- -y
+          rustup target add aarch64-apple-ios
+
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1.4.1
         with:
           xcode-version: ${{ matrix.version }}
       - name: Build SideStore
         run: |
+          export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
           rm -rf ~/Library/Developer/Xcode/DerivedData/
           rm ./AltStore.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved 
+          cd ./Dependencies/Secret-Tunnel && cargo build --target aarch64-apple-ios --release --features minimuxer && cd .. && cd ..
           xcodebuild -project AltStore.xcodeproj -scheme AltStore -sdk iphoneos archive -archivePath ./archive CODE_SIGNING_REQUIRED=NO AD_HOC_CODE_SIGNING_ALLOWED=YES CODE_SIGNING_ALLOWED=NO DEVELOPMENT_TEAM=XYZ0123456 ORG_IDENTIFIER=com.SideStore | xcpretty && exit ${PIPESTATUS[0]}
       - name: Fakesign app
         run: | 
