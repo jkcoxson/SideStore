@@ -25,6 +25,7 @@ jobs:
       - name: Install dependencies
         run: |
           brew install ldid
+          rustup update
           rustup target add aarch64-apple-ios
 
       - name: Setup Xcode
