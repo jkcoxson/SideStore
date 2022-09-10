@@ -2280,6 +2280,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				194455EA28CC1CC9001C1504 /* PBXTargetDependency */,
 			);
 			name = libimobiledevice;
 			productName = libimobiledevice;
@@ -2374,6 +2375,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1937097828C7F3900084EE6A /* PBXTargetDependency */,
 				BF66EE842501AE50007EE018 /* PBXTargetDependency */,
 				BF989176250AABF4002ACF50 /* PBXTargetDependency */,
 				19A0524928C1F2B1006EC362 /* PBXTargetDependency */,
@@ -2960,6 +2962,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1937097828C7F3900084EE6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1937097728C7F3900084EE6A /* OpenSSL */;
+		};
+		194455EA28CC1CC9001C1504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 194455E928CC1CC9001C1504 /* OpenSSL */;
+		};
 		19A0524928C1F2B1006EC362 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF45872A2298D31600BD7491 /* libimobiledevice */;
@@ -3991,6 +4001,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1937097728C7F3900084EE6A /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4879A9602861049C00FC1BBD /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+		194455E928CC1CC9001C1504 /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4879A9602861049C00FC1BBD /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
 		4879A95E2861046500FC1BBD /* AltSign */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4879A95D2861046500FC1BBD /* XCRemoteSwiftPackageReference "AltSign" */;
