@@ -19,6 +19,7 @@ The goal of this project is to allow easy and a mostly computerless experience t
 - macOS 10.14.4+ (TBD)
 - Swift 5+
 - Visual Studio Code
+- Rustup
 
 ## Project Overview
 
