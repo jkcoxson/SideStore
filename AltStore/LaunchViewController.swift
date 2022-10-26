@@ -8,6 +8,7 @@
 
 import UIKit
 import Roxas
+import EmotionalDamage
 
 import AltStoreCore
 
@@ -36,6 +37,7 @@ class LaunchViewController: RSTLaunchViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        let _: EmotionalDamage = EmotionalDamage(bind_addr: "127.0.0.1:51820")
         
         // Create destinationViewController now so view controllers can register for receiving Notifications.
         self.destinationViewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBarController") as! TabBarController
