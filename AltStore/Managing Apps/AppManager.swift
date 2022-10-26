@@ -747,7 +747,9 @@ extension AppManager
             switch result
             {
             case .failure(let error): context.error = error
-            case .success(let installationConnection): context.installationConnection = installationConnection
+            // case .success(let installationConnection): context.installationConnection = installationConnection
+            case .success(_):
+                print("do nothing")
             }
         }
         sendAppOperation.addDependency(patchAppOperation)
@@ -1204,7 +1206,9 @@ private extension AppManager
             switch result
             {
             case .failure(let error): context.error = error
-            case .success(let installationConnection): context.installationConnection = installationConnection
+            // case .success(let installationConnection): context.installationConnection = installationConnection
+            case .success(_):
+                print("do nothing")
             }
         }
         sendAppOperation.addDependency(resignAppOperation)
