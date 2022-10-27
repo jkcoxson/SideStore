@@ -14,11 +14,20 @@
 		191E5FAE290A5D92001A3B7C /* minimuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FAD290A5D92001A3B7C /* minimuxer.swift */; };
 		191E5FB4290A5DA0001A3B7C /* libminimuxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191E5FAB290A5D92001A3B7C /* libminimuxer.a */; };
 		191E5FB6290A5E1F001A3B7C /* libminimuxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191E5FB5290A5E1F001A3B7C /* libminimuxer.a */; };
-		191E5FBA290A616E001A3B7C /* companion_proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FB9290A616E001A3B7C /* companion_proxy.c */; };
-		191E5FC8290A62BA001A3B7C /* preboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FC7290A62BA001A3B7C /* preboard.c */; };
-		191E5FD2290A651D001A3B7C /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FD0290A651D001A3B7C /* jsmn.c */; };
-		191E5FD3290A651D001A3B7C /* jplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FCF290A651D001A3B7C /* jplist.c */; };
 		191E5FDC290AFA5C001A3B7C /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 191E5FDB290AFA5C001A3B7C /* OpenSSL */; };
+		191E6066290B2DB1001A3B7C /* cbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E605E290B2D6B001A3B7C /* cbuf.c */; };
+		191E6067290B2DB3001A3B7C /* collection.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E6060290B2D6B001A3B7C /* collection.c */; };
+		191E6068290B2DB5001A3B7C /* glue.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E605D290B2D6B001A3B7C /* glue.c */; };
+		191E6069290B2DB7001A3B7C /* opack.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E6061290B2D6B001A3B7C /* opack.c */; };
+		191E606A290B2DC4001A3B7C /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E6064290B2D6B001A3B7C /* socket.c */; };
+		191E606B290B2DC6001A3B7C /* termcolors.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E6065290B2D6B001A3B7C /* termcolors.c */; };
+		191E606C290B2DC8001A3B7C /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E6063290B2D6B001A3B7C /* thread.c */; };
+		191E606D290B2DCA001A3B7C /* tlv.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E6062290B2D6B001A3B7C /* tlv.c */; };
+		191E606E290B2DCB001A3B7C /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E605F290B2D6B001A3B7C /* utils.c */; };
+		191E6075290B2E46001A3B7C /* companion_proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E6073290B2E02001A3B7C /* companion_proxy.c */; };
+		191E6076290B2E48001A3B7C /* preboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E6074290B2E02001A3B7C /* preboard.c */; };
+		191E607D290B2EA5001A3B7C /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FD0290A651D001A3B7C /* jsmn.c */; };
+		191E607E290B2EA7001A3B7C /* jplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FCF290A651D001A3B7C /* jplist.c */; };
 		19B9B7452845E6DF0076EF69 /* SelectTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */; };
 		4879A95F2861046500FC1BBD /* AltSign in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A95E2861046500FC1BBD /* AltSign */; };
 		4879A9622861049C00FC1BBD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A9612861049C00FC1BBD /* OpenSSL */; };
@@ -118,16 +127,11 @@
 		BF4588342298D3C100BD7491 /* userpref.h in Headers */ = {isa = PBXBuildFile; fileRef = BF45882A2298D3C000BD7491 /* userpref.h */; };
 		BF4588352298D3C100BD7491 /* userpref.c in Sources */ = {isa = PBXBuildFile; fileRef = BF45882B2298D3C000BD7491 /* userpref.c */; };
 		BF4588362298D3C100BD7491 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = BF45882C2298D3C000BD7491 /* debug.h */; };
-		BF4588372298D3C100BD7491 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = BF45882D2298D3C000BD7491 /* utils.c */; };
-		BF4588392298D3C100BD7491 /* socket.c in Sources */ = {isa = PBXBuildFile; fileRef = BF45882F2298D3C000BD7491 /* socket.c */; };
 		BF45883A2298D3C100BD7491 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = BF4588302298D3C000BD7491 /* debug.c */; };
 		BF45883C2298D3C100BD7491 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4588322298D3C100BD7491 /* utils.h */; };
 		BF4588402298D3F800BD7491 /* collection.h in Headers */ = {isa = PBXBuildFile; fileRef = BF45883E2298D3F800BD7491 /* collection.h */; };
-		BF4588412298D3F800BD7491 /* collection.c in Sources */ = {isa = PBXBuildFile; fileRef = BF45883F2298D3F800BD7491 /* collection.c */; };
 		BF4588432298D40000BD7491 /* libusbmuxd.c in Sources */ = {isa = PBXBuildFile; fileRef = BF4588422298D40000BD7491 /* libusbmuxd.c */; };
 		BF4588472298D4B000BD7491 /* libimobiledevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF45872B2298D31600BD7491 /* libimobiledevice.a */; };
-		BF45884A2298D55000BD7491 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = BF4588482298D55000BD7491 /* thread.c */; };
-		BF45884B2298D55000BD7491 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4588492298D55000BD7491 /* thread.h */; };
 		BF4588882298DD3F00BD7491 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4588872298DD3F00BD7491 /* libxml2.tbd */; };
 		BF4B78FE24B3D1DB008AB4AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4B78FD24B3D1DB008AB4AC /* SceneDelegate.swift */; };
 		BF541C0B25E5A5FA00CD46B2 /* FileManager+URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF541C0A25E5A5FA00CD46B2 /* FileManager+URLs.swift */; };
@@ -542,14 +546,21 @@
 		191E5FAB290A5D92001A3B7C /* libminimuxer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libminimuxer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		191E5FAD290A5D92001A3B7C /* minimuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimuxer.swift; sourceTree = "<group>"; };
 		191E5FB5290A5E1F001A3B7C /* libminimuxer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libminimuxer.a; path = "Dependencies/minimuxer/target/aarch64-apple-ios/debug/libminimuxer.a"; sourceTree = "<group>"; };
-		191E5FB9290A616E001A3B7C /* companion_proxy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = companion_proxy.c; sourceTree = SOURCE_ROOT; };
-		191E5FBD290A61B2001A3B7C /* companion_proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = companion_proxy.h; sourceTree = SOURCE_ROOT; };
-		191E5FC6290A62BA001A3B7C /* preboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preboard.h; sourceTree = SOURCE_ROOT; };
-		191E5FC7290A62BA001A3B7C /* preboard.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = preboard.c; sourceTree = SOURCE_ROOT; };
-		191E5FCF290A651D001A3B7C /* jplist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jplist.c; sourceTree = SOURCE_ROOT; };
-		191E5FD0290A651D001A3B7C /* jsmn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jsmn.c; sourceTree = SOURCE_ROOT; };
-		191E5FD1290A651D001A3B7C /* jsmn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsmn.h; sourceTree = SOURCE_ROOT; };
+		191E5FCF290A651D001A3B7C /* jplist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jplist.c; path = Dependencies/libplist/src/jplist.c; sourceTree = SOURCE_ROOT; };
+		191E5FD0290A651D001A3B7C /* jsmn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jsmn.c; path = Dependencies/libplist/src/jsmn.c; sourceTree = SOURCE_ROOT; };
+		191E5FD1290A651D001A3B7C /* jsmn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsmn.h; path = Dependencies/libplist/src/jsmn.h; sourceTree = SOURCE_ROOT; };
 		191E5FD7290A6EFB001A3B7C /* minimuxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = minimuxer.h; sourceTree = "<group>"; };
+		191E605D290B2D6B001A3B7C /* glue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glue.c; path = "../Dependencies/libimobiledevice-glue/src/glue.c"; sourceTree = "<group>"; };
+		191E605E290B2D6B001A3B7C /* cbuf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cbuf.c; path = "../Dependencies/libimobiledevice-glue/src/cbuf.c"; sourceTree = "<group>"; };
+		191E605F290B2D6B001A3B7C /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = utils.c; path = "../Dependencies/libimobiledevice-glue/src/utils.c"; sourceTree = "<group>"; };
+		191E6060290B2D6B001A3B7C /* collection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = collection.c; path = "../Dependencies/libimobiledevice-glue/src/collection.c"; sourceTree = "<group>"; };
+		191E6061290B2D6B001A3B7C /* opack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = opack.c; path = "../Dependencies/libimobiledevice-glue/src/opack.c"; sourceTree = "<group>"; };
+		191E6062290B2D6B001A3B7C /* tlv.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = tlv.c; path = "../Dependencies/libimobiledevice-glue/src/tlv.c"; sourceTree = "<group>"; };
+		191E6063290B2D6B001A3B7C /* thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = thread.c; path = "../Dependencies/libimobiledevice-glue/src/thread.c"; sourceTree = "<group>"; };
+		191E6064290B2D6B001A3B7C /* socket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = socket.c; path = "../Dependencies/libimobiledevice-glue/src/socket.c"; sourceTree = "<group>"; };
+		191E6065290B2D6B001A3B7C /* termcolors.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = termcolors.c; path = "../Dependencies/libimobiledevice-glue/src/termcolors.c"; sourceTree = "<group>"; };
+		191E6073290B2E02001A3B7C /* companion_proxy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = companion_proxy.c; path = ../Dependencies/libimobiledevice/src/companion_proxy.c; sourceTree = "<group>"; };
+		191E6074290B2E02001A3B7C /* preboard.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = preboard.c; path = ../Dependencies/libimobiledevice/src/preboard.c; sourceTree = "<group>"; };
 		19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamViewController.swift; sourceTree = "<group>"; };
 		B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Roxas.xcodeproj; path = Dependencies/Roxas/Roxas.xcodeproj; sourceTree = "<group>"; };
 		B39575F4284F29E20080B4FF /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1048,6 +1059,22 @@
 			path = minimuxer;
 			sourceTree = "<group>";
 		};
+		191E5FF4290B2663001A3B7C /* libimobiledevice-glue */ = {
+			isa = PBXGroup;
+			children = (
+				191E605E290B2D6B001A3B7C /* cbuf.c */,
+				191E6060290B2D6B001A3B7C /* collection.c */,
+				191E605D290B2D6B001A3B7C /* glue.c */,
+				191E6061290B2D6B001A3B7C /* opack.c */,
+				191E6064290B2D6B001A3B7C /* socket.c */,
+				191E6065290B2D6B001A3B7C /* termcolors.c */,
+				191E6063290B2D6B001A3B7C /* thread.c */,
+				191E6062290B2D6B001A3B7C /* tlv.c */,
+				191E605F290B2D6B001A3B7C /* utils.c */,
+			);
+			name = "libimobiledevice-glue";
+			sourceTree = "<group>";
+		};
 		B3146EC7284F580500BBC3FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1156,6 +1183,7 @@
 		BF45872C2298D31600BD7491 /* libimobiledevice */ = {
 			isa = PBXGroup;
 			children = (
+				191E5FF4290B2663001A3B7C /* libimobiledevice-glue */,
 				BF4588562298DC6D00BD7491 /* libplist */,
 				BF4587972298D36400BD7491 /* libimobiledevice */,
 				BF45883D2298D3E800BD7491 /* libusbmuxd */,
@@ -1169,13 +1197,11 @@
 				BF4588282298D3B400BD7491 /* common */,
 				BF4587D72298D3A800BD7491 /* afc.c */,
 				BF4587EC2298D3AA00BD7491 /* afc.h */,
-				191E5FC7290A62BA001A3B7C /* preboard.c */,
-				191E5FC6290A62BA001A3B7C /* preboard.h */,
-				191E5FB9290A616E001A3B7C /* companion_proxy.c */,
 				BF4587DF2298D3A900BD7491 /* debugserver.c */,
-				191E5FBD290A61B2001A3B7C /* companion_proxy.h */,
 				BF4587DE2298D3A900BD7491 /* debugserver.h */,
 				BF4587E42298D3A900BD7491 /* device_link_service.c */,
+				191E6073290B2E02001A3B7C /* companion_proxy.c */,
+				191E6074290B2E02001A3B7C /* preboard.c */,
 				BF4587EF2298D3AA00BD7491 /* device_link_service.h */,
 				BF4587C92298D3A800BD7491 /* diagnostics_relay.c */,
 				BF4587CA2298D3A800BD7491 /* diagnostics_relay.h */,
@@ -1959,7 +1985,6 @@
 				BF45881F2298D3AB00BD7491 /* device_link_service.h in Headers */,
 				BFD52C1A22A1A9CB000B7ED1 /* time64_limits.h in Headers */,
 				BF45880E2298D3AB00BD7491 /* debugserver.h in Headers */,
-				BF45884B2298D55000BD7491 /* thread.h in Headers */,
 				BF4588102298D3AB00BD7491 /* heartbeat.h in Headers */,
 				BF4587FA2298D3AB00BD7491 /* diagnostics_relay.h in Headers */,
 				BFD52C1622A1A9CB000B7ED1 /* bytearray.h in Headers */,
@@ -2518,15 +2543,25 @@
 				BFD52C0622A1A9CB000B7ED1 /* bplist.c in Sources */,
 				BF4588232298D3AB00BD7491 /* mobilesync.c in Sources */,
 				BF4588072298D3AB00BD7491 /* afc.c in Sources */,
+				191E6066290B2DB1001A3B7C /* cbuf.c in Sources */,
+				191E607D290B2EA5001A3B7C /* jsmn.c in Sources */,
+				191E6067290B2DB3001A3B7C /* collection.c in Sources */,
+				191E6075290B2E46001A3B7C /* companion_proxy.c in Sources */,
+				191E607E290B2EA7001A3B7C /* jplist.c in Sources */,
+				191E6076290B2E48001A3B7C /* preboard.c in Sources */,
 				BF4588082298D3AB00BD7491 /* mobile_image_mounter.c in Sources */,
+				191E6068290B2DB5001A3B7C /* glue.c in Sources */,
 				BFD52C1122A1A9CB000B7ED1 /* bytearray.c in Sources */,
-				191E5FBA290A616E001A3B7C /* companion_proxy.c in Sources */,
 				BF4588022298D3AB00BD7491 /* file_relay.c in Sources */,
+				191E6069290B2DB7001A3B7C /* opack.c in Sources */,
+				191E606A290B2DC4001A3B7C /* socket.c in Sources */,
+				191E606E290B2DCB001A3B7C /* utils.c in Sources */,
+				191E606B290B2DC6001A3B7C /* termcolors.c in Sources */,
+				191E606C290B2DC8001A3B7C /* thread.c in Sources */,
+				191E606D290B2DCA001A3B7C /* tlv.c in Sources */,
 				BF45880F2298D3AB00BD7491 /* debugserver.c in Sources */,
 				BF4588162298D3AB00BD7491 /* restore.c in Sources */,
 				BFD52C0422A1A9CB000B7ED1 /* Dictionary.cpp in Sources */,
-				BF4588412298D3F800BD7491 /* collection.c in Sources */,
-				BF4588372298D3C100BD7491 /* utils.c in Sources */,
 				BFD52C0222A1A9CB000B7ED1 /* base64.c in Sources */,
 				BFD52C2022A1A9EC000B7ED1 /* node.c in Sources */,
 				BF4588092298D3AB00BD7491 /* installation_proxy.c in Sources */,
@@ -2538,27 +2573,22 @@
 				BF4587F92298D3AB00BD7491 /* diagnostics_relay.c in Sources */,
 				BF4588062298D3AB00BD7491 /* webinspector.c in Sources */,
 				BFD52C1722A1A9CB000B7ED1 /* Key.cpp in Sources */,
-				191E5FC8290A62BA001A3B7C /* preboard.c in Sources */,
 				BF45880D2298D3AB00BD7491 /* mobilebackup.c in Sources */,
 				BFD52C0C22A1A9CB000B7ED1 /* Date.cpp in Sources */,
 				BFD52C0A22A1A9CB000B7ED1 /* plist.c in Sources */,
 				BFD52C1322A1A9CB000B7ED1 /* Data.cpp in Sources */,
 				BF45883A2298D3C100BD7491 /* debug.c in Sources */,
 				BFD52C0F22A1A9CB000B7ED1 /* Real.cpp in Sources */,
-				BF45884A2298D55000BD7491 /* thread.c in Sources */,
 				BF4587FB2298D3AB00BD7491 /* notification_proxy.c in Sources */,
 				BF4588352298D3C100BD7491 /* userpref.c in Sources */,
 				BFD52C0122A1A9CB000B7ED1 /* ptrarray.c in Sources */,
-				191E5FD2290A651D001A3B7C /* jsmn.c in Sources */,
 				BFD52C0E22A1A9CB000B7ED1 /* Boolean.cpp in Sources */,
 				BFD52C0822A1A9CB000B7ED1 /* time64.c in Sources */,
 				BFD52C2122A1A9EC000B7ED1 /* node_list.c in Sources */,
 				BFD52C1422A1A9CB000B7ED1 /* Array.cpp in Sources */,
 				BF4588242298D3AB00BD7491 /* property_list_service.c in Sources */,
-				191E5FD3290A651D001A3B7C /* jplist.c in Sources */,
 				BF45881E2298D3AB00BD7491 /* misagent.c in Sources */,
 				BF4587FC2298D3AB00BD7491 /* sbservices.c in Sources */,
-				BF4588392298D3C100BD7491 /* socket.c in Sources */,
 				BFD52C1522A1A9CB000B7ED1 /* Node.cpp in Sources */,
 				BF4588142298D3AB00BD7491 /* device_link_service.c in Sources */,
 				BF4588172298D3AB00BD7491 /* screenshotr.c in Sources */,
@@ -3182,6 +3212,7 @@
 					"\"$(SRCROOT)/Dependencies/libplist/libcnary/include\"",
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
+					"\"$(SRCROOT)/Dependencies/libimobiledevice-glue/include\"/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = imobiledevice;
@@ -3221,6 +3252,7 @@
 					"\"$(SRCROOT)/Dependencies/libplist/libcnary/include\"",
 					"\"${SDKROOT}/usr/include/libxml2\"",
 					"\"$(SRCROOT)/Dependencies/AltSign/Dependencies/libzip/xcode\"",
+					"\"$(SRCROOT)/Dependencies/libimobiledevice-glue/include\"/**",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = imobiledevice;
