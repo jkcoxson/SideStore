@@ -14,6 +14,10 @@
 		191E5FAE290A5D92001A3B7C /* minimuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FAD290A5D92001A3B7C /* minimuxer.swift */; };
 		191E5FB4290A5DA0001A3B7C /* libminimuxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191E5FAB290A5D92001A3B7C /* libminimuxer.a */; };
 		191E5FB6290A5E1F001A3B7C /* libminimuxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191E5FB5290A5E1F001A3B7C /* libminimuxer.a */; };
+		191E5FBA290A616E001A3B7C /* companion_proxy.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FB9290A616E001A3B7C /* companion_proxy.c */; };
+		191E5FC8290A62BA001A3B7C /* preboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FC7290A62BA001A3B7C /* preboard.c */; };
+		191E5FD2290A651D001A3B7C /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FD0290A651D001A3B7C /* jsmn.c */; };
+		191E5FD3290A651D001A3B7C /* jplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FCF290A651D001A3B7C /* jplist.c */; };
 		19B9B7452845E6DF0076EF69 /* SelectTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */; };
 		4879A95F2861046500FC1BBD /* AltSign in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A95E2861046500FC1BBD /* AltSign */; };
 		4879A9622861049C00FC1BBD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A9612861049C00FC1BBD /* OpenSSL */; };
@@ -533,13 +537,19 @@
 		19104D9C2909BB9D00C49C7B /* EmotionalDamage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmotionalDamage.h; sourceTree = "<group>"; };
 		19104D9D2909BB9D00C49C7B /* EmotionalDamage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmotionalDamage.m; sourceTree = "<group>"; };
 		19104DA32909BC1000C49C7B /* libem_proxy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libem_proxy.a; path = "Dependencies/em_proxy/target/aarch64-apple-ios/debug/libem_proxy.a"; sourceTree = "<group>"; };
-		19104DA72909BC6900C49C7B /* em_proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = em_proxy.h; path = Dependencies/em_proxy/em_proxy.h; sourceTree = "<group>"; };
 		19104DA92909BC7100C49C7B /* em_proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = em_proxy.h; sourceTree = "<group>"; };
 		19104DB22909C06C00C49C7B /* libEmotionalDamage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEmotionalDamage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		19104DB42909C06D00C49C7B /* EmotionalDamage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionalDamage.swift; sourceTree = "<group>"; };
 		191E5FAB290A5D92001A3B7C /* libminimuxer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libminimuxer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		191E5FAD290A5D92001A3B7C /* minimuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimuxer.swift; sourceTree = "<group>"; };
 		191E5FB5290A5E1F001A3B7C /* libminimuxer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libminimuxer.a; path = "Dependencies/minimuxer/target/aarch64-apple-ios/debug/libminimuxer.a"; sourceTree = "<group>"; };
+		191E5FB9290A616E001A3B7C /* companion_proxy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = companion_proxy.c; sourceTree = SOURCE_ROOT; };
+		191E5FBD290A61B2001A3B7C /* companion_proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = companion_proxy.h; sourceTree = SOURCE_ROOT; };
+		191E5FC6290A62BA001A3B7C /* preboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = preboard.h; sourceTree = SOURCE_ROOT; };
+		191E5FC7290A62BA001A3B7C /* preboard.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = preboard.c; sourceTree = SOURCE_ROOT; };
+		191E5FCF290A651D001A3B7C /* jplist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jplist.c; sourceTree = SOURCE_ROOT; };
+		191E5FD0290A651D001A3B7C /* jsmn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jsmn.c; sourceTree = SOURCE_ROOT; };
+		191E5FD1290A651D001A3B7C /* jsmn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsmn.h; sourceTree = SOURCE_ROOT; };
 		19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamViewController.swift; sourceTree = "<group>"; };
 		B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Roxas.xcodeproj; path = Dependencies/Roxas/Roxas.xcodeproj; sourceTree = "<group>"; };
 		B39575F4284F29E20080B4FF /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1166,7 +1176,11 @@
 				BF4588282298D3B400BD7491 /* common */,
 				BF4587D72298D3A800BD7491 /* afc.c */,
 				BF4587EC2298D3AA00BD7491 /* afc.h */,
+				191E5FC7290A62BA001A3B7C /* preboard.c */,
+				191E5FC6290A62BA001A3B7C /* preboard.h */,
+				191E5FB9290A616E001A3B7C /* companion_proxy.c */,
 				BF4587DF2298D3A900BD7491 /* debugserver.c */,
+				191E5FBD290A61B2001A3B7C /* companion_proxy.h */,
 				BF4587DE2298D3A900BD7491 /* debugserver.h */,
 				BF4587E42298D3A900BD7491 /* device_link_service.c */,
 				BF4587EF2298D3AA00BD7491 /* device_link_service.h */,
@@ -1251,6 +1265,9 @@
 				BFD52BE622A1A9CA000B7ED1 /* base64.c */,
 				BFD52BF622A1A9CA000B7ED1 /* base64.h */,
 				BFD52BF222A1A9CA000B7ED1 /* Boolean.cpp */,
+				191E5FD1290A651D001A3B7C /* jsmn.h */,
+				191E5FD0290A651D001A3B7C /* jsmn.c */,
+				191E5FCF290A651D001A3B7C /* jplist.c */,
 				BFD52BEA22A1A9CA000B7ED1 /* bplist.c */,
 				BFD52BF522A1A9CA000B7ED1 /* bytearray.c */,
 				BFD52BFA22A1A9CB000B7ED1 /* bytearray.h */,
@@ -1611,7 +1628,6 @@
 		BFD247612284B9A500981D42 = {
 			isa = PBXGroup;
 			children = (
-				19104DA72909BC6900C49C7B /* em_proxy.h */,
 				B3C39607284F4C8400DA9E2F /* Build.xcconfig */,
 				B3C39606284F4C8400DA9E2F /* CodeSigning.xcconfig */,
 				B3C39608284F4C8400DA9E2F /* CodeSigning.xcconfig.sample */,
@@ -2500,6 +2516,7 @@
 				BF4588072298D3AB00BD7491 /* afc.c in Sources */,
 				BF4588082298D3AB00BD7491 /* mobile_image_mounter.c in Sources */,
 				BFD52C1122A1A9CB000B7ED1 /* bytearray.c in Sources */,
+				191E5FBA290A616E001A3B7C /* companion_proxy.c in Sources */,
 				BF4588022298D3AB00BD7491 /* file_relay.c in Sources */,
 				BF45880F2298D3AB00BD7491 /* debugserver.c in Sources */,
 				BF4588162298D3AB00BD7491 /* restore.c in Sources */,
@@ -2517,6 +2534,7 @@
 				BF4587F92298D3AB00BD7491 /* diagnostics_relay.c in Sources */,
 				BF4588062298D3AB00BD7491 /* webinspector.c in Sources */,
 				BFD52C1722A1A9CB000B7ED1 /* Key.cpp in Sources */,
+				191E5FC8290A62BA001A3B7C /* preboard.c in Sources */,
 				BF45880D2298D3AB00BD7491 /* mobilebackup.c in Sources */,
 				BFD52C0C22A1A9CB000B7ED1 /* Date.cpp in Sources */,
 				BFD52C0A22A1A9CB000B7ED1 /* plist.c in Sources */,
@@ -2527,11 +2545,13 @@
 				BF4587FB2298D3AB00BD7491 /* notification_proxy.c in Sources */,
 				BF4588352298D3C100BD7491 /* userpref.c in Sources */,
 				BFD52C0122A1A9CB000B7ED1 /* ptrarray.c in Sources */,
+				191E5FD2290A651D001A3B7C /* jsmn.c in Sources */,
 				BFD52C0E22A1A9CB000B7ED1 /* Boolean.cpp in Sources */,
 				BFD52C0822A1A9CB000B7ED1 /* time64.c in Sources */,
 				BFD52C2122A1A9EC000B7ED1 /* node_list.c in Sources */,
 				BFD52C1422A1A9CB000B7ED1 /* Array.cpp in Sources */,
 				BF4588242298D3AB00BD7491 /* property_list_service.c in Sources */,
+				191E5FD3290A651D001A3B7C /* jplist.c in Sources */,
 				BF45881E2298D3AB00BD7491 /* misagent.c in Sources */,
 				BF4587FC2298D3AB00BD7491 /* sbservices.c in Sources */,
 				BF4588392298D3C100BD7491 /* socket.c in Sources */,
@@ -3139,6 +3159,7 @@
 					HAVE_ASPRINTF,
 					"\"PACKAGE_STRING=\\\"AltServer 1.0\\\"\"",
 					HAVE_GETIFADDRS,
+					HAVE_STRNDUP,
 				);
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = (
@@ -3177,6 +3198,7 @@
 					HAVE_ASPRINTF,
 					"\"PACKAGE_STRING=\\\"AltServer 1.0\\\"\"",
 					HAVE_GETIFADDRS,
+					HAVE_STRNDUP,
 				);
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = (

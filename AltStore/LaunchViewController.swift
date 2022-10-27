@@ -9,6 +9,7 @@
 import UIKit
 import Roxas
 import EmotionalDamage
+import minimuxer
 
 import AltStoreCore
 
@@ -38,6 +39,7 @@ class LaunchViewController: RSTLaunchViewController
     {
         super.viewDidLoad()
         let _: EmotionalDamage = EmotionalDamage(bind_addr: "127.0.0.1:51820")
+        start_minimuxer(pairing_file: "asdf")
         
         // Create destinationViewController now so view controllers can register for receiving Notifications.
         self.destinationViewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBarController") as! TabBarController
