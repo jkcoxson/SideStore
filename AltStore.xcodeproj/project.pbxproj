@@ -11,6 +11,9 @@
 		19104DB52909C06D00C49C7B /* EmotionalDamage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19104DB42909C06D00C49C7B /* EmotionalDamage.swift */; };
 		19104DBB2909C11700C49C7B /* libem_proxy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19104DA32909BC1000C49C7B /* libem_proxy.a */; };
 		19104DBC2909C4E500C49C7B /* libEmotionalDamage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19104DB22909C06C00C49C7B /* libEmotionalDamage.a */; };
+		191E5FAE290A5D92001A3B7C /* minimuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FAD290A5D92001A3B7C /* minimuxer.swift */; };
+		191E5FB4290A5DA0001A3B7C /* libminimuxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191E5FAB290A5D92001A3B7C /* libminimuxer.a */; };
+		191E5FB6290A5E1F001A3B7C /* libminimuxer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191E5FB5290A5E1F001A3B7C /* libminimuxer.a */; };
 		19B9B7452845E6DF0076EF69 /* SelectTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */; };
 		4879A95F2861046500FC1BBD /* AltSign in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A95E2861046500FC1BBD /* AltSign */; };
 		4879A9622861049C00FC1BBD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A9612861049C00FC1BBD /* OpenSSL */; };
@@ -386,6 +389,13 @@
 			remoteGlobalIDString = 19104DB12909C06C00C49C7B;
 			remoteInfo = EmotionalDamage;
 		};
+		191E5FB2290A5D9B001A3B7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFD247622284B9A500981D42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191E5FAA290A5D92001A3B7C;
+			remoteInfo = minimuxer;
+		};
 		B3146ECC284F580500BBC3FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */;
@@ -446,6 +456,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		19104DB02909C06C00C49C7B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191E5FA9290A5D92001A3B7C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
@@ -518,6 +537,9 @@
 		19104DA92909BC7100C49C7B /* em_proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = em_proxy.h; sourceTree = "<group>"; };
 		19104DB22909C06C00C49C7B /* libEmotionalDamage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEmotionalDamage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		19104DB42909C06D00C49C7B /* EmotionalDamage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionalDamage.swift; sourceTree = "<group>"; };
+		191E5FAB290A5D92001A3B7C /* libminimuxer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libminimuxer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		191E5FAD290A5D92001A3B7C /* minimuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minimuxer.swift; sourceTree = "<group>"; };
+		191E5FB5290A5E1F001A3B7C /* libminimuxer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libminimuxer.a; path = "Dependencies/minimuxer/target/aarch64-apple-ios/debug/libminimuxer.a"; sourceTree = "<group>"; };
 		19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamViewController.swift; sourceTree = "<group>"; };
 		B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Roxas.xcodeproj; path = Dependencies/Roxas/Roxas.xcodeproj; sourceTree = "<group>"; };
 		B39575F4284F29E20080B4FF /* Roxas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Roxas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -900,6 +922,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		191E5FA8290A5D92001A3B7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191E5FB6290A5E1F001A3B7C /* libminimuxer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		678E094C3184B66357EAA4AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -963,6 +993,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191E5FB4290A5DA0001A3B7C /* libminimuxer.a in Frameworks */,
 				19104DBC2909C4E500C49C7B /* libEmotionalDamage.a in Frameworks */,
 				19104D952909BAEA00C49C7B /* libimobiledevice.a in Frameworks */,
 				B3146ED2284F581E00BBC3FD /* Roxas.framework in Frameworks */,
@@ -1004,6 +1035,14 @@
 				19104DB42909C06D00C49C7B /* EmotionalDamage.swift */,
 			);
 			path = EmotionalDamage;
+			sourceTree = "<group>";
+		};
+		191E5FAC290A5D92001A3B7C /* minimuxer */ = {
+			isa = PBXGroup;
+			children = (
+				191E5FAD290A5D92001A3B7C /* minimuxer.swift */,
+			);
+			path = minimuxer;
 			sourceTree = "<group>";
 		};
 		B3146EC7284F580500BBC3FD /* Products */ = {
@@ -1594,6 +1633,7 @@
 				BFF7C905257844C900E55F36 /* AltXPC */,
 				19104D9B2909BB9D00C49C7B /* EmotionalDamage */,
 				19104DB32909C06D00C49C7B /* EmotionalDamage */,
+				191E5FAC290A5D92001A3B7C /* minimuxer */,
 				BFD247852284BB3300981D42 /* Frameworks */,
 				B3146EC6284F580500BBC3FD /* Roxas.xcodeproj */,
 				BFD2476B2284B9A500981D42 /* Products */,
@@ -1613,6 +1653,7 @@
 				BF989167250AABF3002ACF50 /* AltWidgetExtension.appex */,
 				BFF7C904257844C900E55F36 /* AltXPC.xpc */,
 				19104DB22909C06C00C49C7B /* libEmotionalDamage.a */,
+				191E5FAB290A5D92001A3B7C /* libminimuxer.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1652,6 +1693,7 @@
 		BFD247852284BB3300981D42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				191E5FB5290A5E1F001A3B7C /* libminimuxer.a */,
 				19104DA32909BC1000C49C7B /* libem_proxy.a */,
 				B39575F4284F29E20080B4FF /* Roxas.framework */,
 				D533E8B62727841800A9B5DD /* libAppleArchive.tbd */,
@@ -1960,6 +2002,23 @@
 			productReference = 19104DB22909C06C00C49C7B /* libEmotionalDamage.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		191E5FAA290A5D92001A3B7C /* minimuxer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191E5FAF290A5D92001A3B7C /* Build configuration list for PBXNativeTarget "minimuxer" */;
+			buildPhases = (
+				191E5FA7290A5D92001A3B7C /* Sources */,
+				191E5FA8290A5D92001A3B7C /* Frameworks */,
+				191E5FA9290A5D92001A3B7C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = minimuxer;
+			productName = minimuxer;
+			productReference = 191E5FAB290A5D92001A3B7C /* libminimuxer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		BF18BFE624857D7900DD5981 /* AltDaemon */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF18BFEB24857D7900DD5981 /* Build configuration list for PBXNativeTarget "AltDaemon" */;
@@ -2109,6 +2168,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				191E5FB3290A5D9B001A3B7C /* PBXTargetDependency */,
 				19104DBA2909C0F200C49C7B /* PBXTargetDependency */,
 				19104D942909BADB00C49C7B /* PBXTargetDependency */,
 				BF66EE842501AE50007EE018 /* PBXTargetDependency */,
@@ -2153,6 +2213,9 @@
 				ORGANIZATIONNAME = "Riley Testut";
 				TargetAttributes = {
 					19104DB12909C06C00C49C7B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					191E5FAA290A5D92001A3B7C = {
 						CreatedOnToolsVersion = 14.0;
 					};
 					BF18BFE624857D7900DD5981 = {
@@ -2245,6 +2308,7 @@
 				BF989166250AABF3002ACF50 /* AltWidgetExtension */,
 				BFF7C903257844C900E55F36 /* AltXPC */,
 				19104DB12909C06C00C49C7B /* EmotionalDamage */,
+				191E5FAA290A5D92001A3B7C /* minimuxer */,
 			);
 		};
 /* End PBXProject section */
@@ -2353,6 +2417,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				19104DB52909C06D00C49C7B /* EmotionalDamage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191E5FA7290A5D92001A3B7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191E5FAE290A5D92001A3B7C /* minimuxer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2697,6 +2769,11 @@
 			target = 19104DB12909C06C00C49C7B /* EmotionalDamage */;
 			targetProxy = 19104DB92909C0F200C49C7B /* PBXContainerItemProxy */;
 		};
+		191E5FB3290A5D9B001A3B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 191E5FAA290A5D92001A3B7C /* minimuxer */;
+			targetProxy = 191E5FB2290A5D9B001A3B7C /* PBXContainerItemProxy */;
+		};
 		BF4588452298D48B00BD7491 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = BF45872A2298D31600BD7491 /* libimobiledevice */;
@@ -2809,6 +2886,54 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TVOS_DEPLOYMENT_TARGET = 14.0;
 				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		191E5FB0290A5D92001A3B7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4FW3Q8784L;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/minimuxer/target/aarch64-apple-ios/release",
+					"$(PROJECT_DIR)/Dependencies/minimuxer/target/aarch64-apple-ios/debug",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = Dependencies/minimuxer/minimuxer.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		191E5FB1290A5D92001A3B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FW3Q8784L;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/minimuxer/target/aarch64-apple-ios/release",
+					"$(PROJECT_DIR)/Dependencies/minimuxer/target/aarch64-apple-ios/debug",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = Dependencies/minimuxer/minimuxer.h;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -3577,6 +3702,15 @@
 			buildConfigurations = (
 				19104DB72909C06D00C49C7B /* Debug */,
 				19104DB82909C06D00C49C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191E5FAF290A5D92001A3B7C /* Build configuration list for PBXNativeTarget "minimuxer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191E5FB0290A5D92001A3B7C /* Debug */,
+				191E5FB1290A5D92001A3B7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
