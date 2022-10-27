@@ -39,7 +39,10 @@ class LaunchViewController: RSTLaunchViewController
     {
         super.viewDidLoad()
         let _: EmotionalDamage = EmotionalDamage(bind_addr: "127.0.0.1:51820")
-        start_minimuxer(pairing_file: "asdf")
+        
+        let pf = Bundle.main.object(forInfoDictionaryKey: "ALTPairingFile") as? String
+        set_usbmuxd_socket()
+        start_minimuxer(pairing_file: pf.unsafelyUnwrapped)
         
         // Create destinationViewController now so view controllers can register for receiving Notifications.
         self.destinationViewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBarController") as! TabBarController
