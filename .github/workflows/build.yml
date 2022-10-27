@@ -24,6 +24,16 @@ jobs:
           submodules: recursive
       - name: Install dependencies
         run: brew install ldid
+      - name: Install rustup
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+          target: aarch64-apple-ios
+      - name: Create emotional damage
+        run: cd Dependencies/em_proxy && cargo build --release --target aarch64-apple-ios
+      - name: Build minimuxer
+        run: cd Dependencies/minimuxer && cargo build --release --target aarch64-apple-ios
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1.4.1
         with:
