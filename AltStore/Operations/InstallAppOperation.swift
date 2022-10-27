@@ -5,7 +5,6 @@
 //  Created by Riley Testut on 6/19/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
 //
-
 import Foundation
 import Network
 
@@ -41,8 +40,7 @@ class InstallAppOperation: ResultOperation<InstalledApp>
         
         guard
             let certificate = self.context.certificate,
-            let resignedApp = self.context.resignedApp,
-            let connection = self.context.installationConnection
+            let resignedApp = self.context.resignedApp
         else { return self.finish(.failure(OperationError.invalidParameters)) }
         
         let backgroundContext = DatabaseManager.shared.persistentContainer.newBackgroundContext()
@@ -145,28 +143,40 @@ class InstallAppOperation: ResultOperation<InstalledApp>
                 })
             }
             
-            let request = BeginInstallationRequest(activeProfiles: activeProfiles, bundleIdentifier: installedApp.resignedBundleIdentifier)
-            connection.send(request) { (result) in
-                switch result
-                {
-                case .failure(let error): self.finish(.failure(error))
-                case .success:
-                    
-                    self.receive(from: connection) { (result) in
-                        switch result
-                        {
-                        case .success:
-                            backgroundContext.perform {
-                                installedApp.refreshedDate = Date()
-                                self.finish(.success(installedApp))
-                            }
-                            
-                        case .failure(let error):
-                            self.finish(.failure(error))
-                        }
-                    }
-                }
+            let ns_bundle = NSString(string: installedApp.bundleIdentifier)
+            let ns_bundle_ptr = UnsafeMutablePointer<CChar>(mutating: ns_bundle.utf8String)
+            
+            var res = minimuxer_install_ipa(ns_bundle_ptr)
+            if res == 0 {
+                installedApp.refreshedDate = Date()
+                self.finish(.success(installedApp))
+
+            } else {
+                self.finish(.failure("didn't work" as! Error))
             }
+                        
+//            let request = BeginInstallationRequest(activeProfiles: activeProfiles, bundleIdentifier: installedApp.resignedBundleIdentifier)
+//            connection.send(request) { (result) in
+//                switch result
+//                {
+//                case .failure(let error): self.finish(.failure(error))
+//                case .success:
+//
+//                    self.receive(from: connection) { (result) in
+//                        switch result
+//                        {
+//                        case .success:
+//                            backgroundContext.perform {
+//                                installedApp.refreshedDate = Date()
+//                                self.finish(.success(installedApp))
+//                            }
+//
+//                        case .failure(let error):
+//                            self.finish(.failure(error))
+//                        }
+//                    }
+//                }
+//            }
         }
     }
     

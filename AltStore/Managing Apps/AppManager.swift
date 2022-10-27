@@ -747,7 +747,9 @@ extension AppManager
             switch result
             {
             case .failure(let error): context.error = error
-            case .success(let installationConnection): context.installationConnection = installationConnection
+            // case .success(let installationConnection): context.installationConnection = installationConnection
+            case .success(_):
+                print("do nothing")
             }
         }
         sendAppOperation.addDependency(patchAppOperation)
@@ -1147,7 +1149,7 @@ private extension AppManager
                             presentingViewController?.dismiss(animated: true, completion: nil)
                         }
                     }
-                    presentingViewController.present(navigationController, animated: true, completion: nil)                    
+                    presentingViewController.present(navigationController, animated: true, completion: nil)
                 }
             }
             catch
@@ -1204,7 +1206,9 @@ private extension AppManager
             switch result
             {
             case .failure(let error): context.error = error
-            case .success(let installationConnection): context.installationConnection = installationConnection
+            // case .success(let installationConnection): context.installationConnection = installationConnection
+            case .success(_):
+                print("do nothing")
             }
         }
         sendAppOperation.addDependency(resignAppOperation)
@@ -1709,7 +1713,7 @@ private extension AppManager
             }
             
             if #available(iOS 14, *)
-            {                
+            {
                 WidgetCenter.shared.getCurrentConfigurations { (result) in
                     guard case .success(let widgets) = result else { return }
                     
