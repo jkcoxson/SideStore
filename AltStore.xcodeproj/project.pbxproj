@@ -18,6 +18,7 @@
 		191E5FC8290A62BA001A3B7C /* preboard.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FC7290A62BA001A3B7C /* preboard.c */; };
 		191E5FD2290A651D001A3B7C /* jsmn.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FD0290A651D001A3B7C /* jsmn.c */; };
 		191E5FD3290A651D001A3B7C /* jplist.c in Sources */ = {isa = PBXBuildFile; fileRef = 191E5FCF290A651D001A3B7C /* jplist.c */; };
+		191E5FDC290AFA5C001A3B7C /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 191E5FDB290AFA5C001A3B7C /* OpenSSL */; };
 		19B9B7452845E6DF0076EF69 /* SelectTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B9B7442845E6DF0076EF69 /* SelectTeamViewController.swift */; };
 		4879A95F2861046500FC1BBD /* AltSign in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A95E2861046500FC1BBD /* AltSign */; };
 		4879A9622861049C00FC1BBD /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 4879A9612861049C00FC1BBD /* OpenSSL */; };
@@ -943,6 +944,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191E5FDC290AFA5C001A3B7C /* OpenSSL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2088,8 +2090,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				191E5FDA290AFA49001A3B7C /* PBXTargetDependency */,
 			);
 			name = libimobiledevice;
+			packageProductDependencies = (
+				191E5FDB290AFA5C001A3B7C /* OpenSSL */,
+			);
 			productName = libimobiledevice;
 			productReference = BF45872B2298D31600BD7491 /* libimobiledevice.a */;
 			productType = "com.apple.product-type.library.static";
@@ -2791,6 +2797,10 @@
 			isa = PBXTargetDependency;
 			target = 191E5FAA290A5D92001A3B7C /* minimuxer */;
 			targetProxy = 191E5FB2290A5D9B001A3B7C /* PBXContainerItemProxy */;
+		};
+		191E5FDA290AFA49001A3B7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 191E5FD9290AFA49001A3B7C /* OpenSSL */;
 		};
 		BF4588452298D48B00BD7491 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -3895,6 +3905,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		191E5FD9290AFA49001A3B7C /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4879A9602861049C00FC1BBD /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+		191E5FDB290AFA5C001A3B7C /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4879A9602861049C00FC1BBD /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
 		4879A95E2861046500FC1BBD /* AltSign */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4879A95D2861046500FC1BBD /* XCRemoteSwiftPackageReference "AltSign" */;
