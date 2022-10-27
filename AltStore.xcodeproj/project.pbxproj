@@ -2877,6 +2877,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/em_proxy/target/aarch64-apple-ios/release",
 					"$(PROJECT_DIR)/Dependencies/em_proxy/target/aarch64-apple-ios/debug",
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
@@ -2903,6 +2904,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies/em_proxy/target/aarch64-apple-ios/release",
 					"$(PROJECT_DIR)/Dependencies/em_proxy/target/aarch64-apple-ios/debug",
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
