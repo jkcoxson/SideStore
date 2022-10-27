@@ -534,8 +534,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		19104D9C2909BB9D00C49C7B /* EmotionalDamage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmotionalDamage.h; sourceTree = "<group>"; };
-		19104D9D2909BB9D00C49C7B /* EmotionalDamage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmotionalDamage.m; sourceTree = "<group>"; };
 		19104DA32909BC1000C49C7B /* libem_proxy.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libem_proxy.a; path = "Dependencies/em_proxy/target/aarch64-apple-ios/debug/libem_proxy.a"; sourceTree = "<group>"; };
 		19104DA92909BC7100C49C7B /* em_proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = em_proxy.h; sourceTree = "<group>"; };
 		19104DB22909C06C00C49C7B /* libEmotionalDamage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEmotionalDamage.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1029,19 +1027,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19104D9B2909BB9D00C49C7B /* EmotionalDamage */ = {
-			isa = PBXGroup;
-			children = (
-				19104DA92909BC7100C49C7B /* em_proxy.h */,
-				19104D9C2909BB9D00C49C7B /* EmotionalDamage.h */,
-				19104D9D2909BB9D00C49C7B /* EmotionalDamage.m */,
-			);
-			path = EmotionalDamage;
-			sourceTree = "<group>";
-		};
 		19104DB32909C06D00C49C7B /* EmotionalDamage */ = {
 			isa = PBXGroup;
 			children = (
+				19104DA92909BC7100C49C7B /* em_proxy.h */,
 				19104DB42909C06D00C49C7B /* EmotionalDamage.swift */,
 			);
 			path = EmotionalDamage;
@@ -1647,7 +1636,6 @@
 				BF18BFE824857D7900DD5981 /* AltDaemon */,
 				BF98916C250AABF3002ACF50 /* AltWidget */,
 				BFF7C905257844C900E55F36 /* AltXPC */,
-				19104D9B2909BB9D00C49C7B /* EmotionalDamage */,
 				19104DB32909C06D00C49C7B /* EmotionalDamage */,
 				191E5FAC290A5D92001A3B7C /* minimuxer */,
 				BFD247852284BB3300981D42 /* Frameworks */,
