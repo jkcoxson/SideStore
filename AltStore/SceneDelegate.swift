@@ -39,7 +39,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         guard DatabaseManager.shared.isStarted else { return }
         
         AppManager.shared.update()
-        ServerManager.shared.startDiscovering()
         
         PatreonAPI.shared.refreshPatreonAccount()
     }
@@ -51,8 +50,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         // to restore the scene back to its current state.
         
         guard UIApplication.shared.applicationState == .background else { return }
-        
-        ServerManager.shared.stopDiscovering()
     }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)

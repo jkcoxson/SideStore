@@ -15,7 +15,6 @@ import AltStoreCore
 @available(iOS 14, *)
 protocol EnableJITContext
 {
-    var server: Server? { get }
     var installedApp: InstalledApp? { get }
     
     var error: Error? { get }

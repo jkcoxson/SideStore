@@ -182,42 +182,6 @@ class InstallAppOperation: ResultOperation<InstalledApp>
 
 private extension InstallAppOperation
 {
-    func receive(from connection: ServerConnection, completionHandler: @escaping (Result<Void, Error>) -> Void)
-    {
-        connection.receiveResponse() { (result) in
-            do
-            {
-                let response = try result.get()
-                print(response)
-                
-                switch response
-                {
-                case .installationProgress(let response):
-                    if response.progress == 1.0
-                    {
-                        self.progress.completedUnitCount = self.progress.totalUnitCount
-                        completionHandler(.success(()))
-                    }
-                    else
-                    {
-                        self.progress.completedUnitCount = Int64(response.progress * 100)
-                        self.receive(from: connection, completionHandler: completionHandler)
-                    }
-                    
-                case .error(let response):
-                    completionHandler(.failure(response.error))
-                    
-                default:
-                    completionHandler(.failure(ALTServerError(.unknownRequest)))
-                }
-            }
-            catch
-            {
-                completionHandler(.failure(ALTServerError(error)))
-            }
-        }
-    }
-    
     func cleanUp()
     {
         guard !self.didCleanUp else { return }

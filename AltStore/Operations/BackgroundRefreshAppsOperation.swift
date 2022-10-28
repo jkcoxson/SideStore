@@ -77,13 +77,7 @@ class BackgroundRefreshAppsOperation: ResultOperation<[String: Result<InstalledA
         self.managedObjectContext.perform {
             self.stopListeningForRunningApps()
         }
-        
-        DispatchQueue.main.async {
-            if UIApplication.shared.applicationState == .background
-            {
-                ServerManager.shared.stopDiscovering()
-            }
-        }        
+              
     }
     
     override func main()
@@ -93,11 +87,6 @@ class BackgroundRefreshAppsOperation: ResultOperation<[String: Result<InstalledA
         guard !self.installedApps.isEmpty else {
             self.finish(.failure(RefreshError.noInstalledApps))
             return
-        }
-        
-        if !ServerManager.shared.isDiscovering
-        {
-            ServerManager.shared.startDiscovering()
         }
         
         self.managedObjectContext.perform {
@@ -206,10 +195,6 @@ private extension BackgroundRefreshAppsOperation
                 
                 content.title = NSLocalizedString("Refreshed Apps", comment: "")
                 content.body = NSLocalizedString("All apps have been refreshed.", comment: "")
-            }
-            catch ConnectionError.serverNotFound
-            {
-                shouldPresentAlert = false
             }
             catch RefreshError.noInstalledApps
             {

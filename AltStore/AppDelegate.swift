@@ -75,8 +75,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.setTintColor()
 
-        ServerManager.shared.startDiscovering()
-
         SecureValueTransformer.register()
 
         if UserDefaults.standard.firstLaunch == nil
@@ -96,17 +94,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    func applicationDidEnterBackground(_ application: UIApplication)
-    {
-        ServerManager.shared.stopDiscovering()
-    }
-
     func applicationWillEnterForeground(_ application: UIApplication)
     {
         AppManager.shared.update()
-        ServerManager.shared.startDiscovering()
-
-        PatreonAPI.shared.refreshPatreonAccount()
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool

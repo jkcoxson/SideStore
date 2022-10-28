@@ -41,3 +41,21 @@ public func install_provisioning_profile(plist: Data) throws -> Uhoh {
     }
     return Uhoh.Good
 }
+
+public func remove_provisioning_profile(id: String) throws -> Uhoh {
+    let id_ns = NSString(string: id)
+    let id_pointer = UnsafeMutablePointer<CChar>(mutating: id_ns.utf8String)
+    if minimuxer_remove_provisioning_profile(id_pointer) != 0 {
+        throw Uhoh.Bad
+    }
+    return Uhoh.Good
+}
+
+public func remove_app(app_id: String) throws -> Uhoh {
+    let ai = NSString(string: app_id)
+    let ai_pointer = UnsafeMutablePointer<CChar>(mutating: ai.utf8String)
+    if minimuxer_remove_app(ai_pointer) == -1 {
+        throw Uhoh.Bad
+    }
+    return Uhoh.Good
+}
