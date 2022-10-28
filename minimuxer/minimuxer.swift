@@ -30,3 +30,14 @@ public func debug_app(app_id: String) throws -> Uhoh {
     }
     return Uhoh.Good
 }
+
+public func install_provisioning_profile(plist: Data) throws -> Uhoh {
+    let pls = String(decoding: plist, as: UTF8.self)
+    print(pls)
+    print(plist)
+    let x = plist.withUnsafeBytes { buf in UnsafeMutableRawPointer(mutating: buf) }
+    if minimuxer_install_provisioning_profile(x, UInt32(plist.count)) != 0 {
+        throw Uhoh.Bad
+    }
+    return Uhoh.Good
+}
