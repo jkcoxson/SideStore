@@ -59,3 +59,17 @@ public func remove_app(app_id: String) throws -> Uhoh {
     }
     return Uhoh.Good
 }
+
+public func auto_mount_dev_image() {
+    let u = NSString(string: getDocumentsDirectory().absoluteString)
+    let u_ptr = UnsafeMutablePointer<CChar>(mutating: u.utf8String)
+    minimuxer_auto_mount(u_ptr)
+}
+
+func getDocumentsDirectory() -> URL {
+    // find all possible documents directories for this user
+    let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+
+    // just send back the first one, which ought to be the only one
+    return paths[0]
+}

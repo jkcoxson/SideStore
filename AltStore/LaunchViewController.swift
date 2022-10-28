@@ -43,6 +43,7 @@ class LaunchViewController: RSTLaunchViewController
         let pf = Bundle.main.object(forInfoDictionaryKey: "ALTPairingFile") as? String
         set_usbmuxd_socket()
         start_minimuxer(pairing_file: pf.unsafelyUnwrapped)
+        auto_mount_dev_image()
         
         // Create destinationViewController now so view controllers can register for receiving Notifications.
         self.destinationViewController = self.storyboard!.instantiateViewController(withIdentifier: "tabBarController") as! TabBarController

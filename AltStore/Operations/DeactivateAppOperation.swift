@@ -42,11 +42,14 @@ class DeactivateAppOperation: ResultOperation<InstalledApp>
             let appExtensionProfiles = installedApp.appExtensions.map { $0.resignedBundleIdentifier }
             let allIdentifiers = [installedApp.resignedBundleIdentifier] + appExtensionProfiles
             
-            do {
-                let _ = try remove_provisioning_profile(id: installedApp.resignedBundleIdentifier)
-            } catch {
-                self.finish(.failure(ALTServerError(.unknownResponse)))
+            for profile in allIdentifiers {
+                do {
+                    let _ = try remove_provisioning_profile(id: profile)
+                } catch {
+                    self.finish(.failure(ALTServerError(.unknownResponse)))
+                }
             }
+            
             self.progress.completedUnitCount += 1
             installedApp.isActive = false
             self.finish(.success(installedApp))
