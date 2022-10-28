@@ -549,7 +549,7 @@
 		191E5FCF290A651D001A3B7C /* jplist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jplist.c; path = Dependencies/libplist/src/jplist.c; sourceTree = SOURCE_ROOT; };
 		191E5FD0290A651D001A3B7C /* jsmn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = jsmn.c; path = Dependencies/libplist/src/jsmn.c; sourceTree = SOURCE_ROOT; };
 		191E5FD1290A651D001A3B7C /* jsmn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = jsmn.h; path = Dependencies/libplist/src/jsmn.h; sourceTree = SOURCE_ROOT; };
-		191E5FD7290A6EFB001A3B7C /* minimuxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = minimuxer.h; sourceTree = "<group>"; };
+		191E5FD7290A6EFB001A3B7C /* minimuxer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = minimuxer.h; path = ../Dependencies/minimuxer/minimuxer.h; sourceTree = "<group>"; };
 		191E605D290B2D6B001A3B7C /* glue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glue.c; path = "../Dependencies/libimobiledevice-glue/src/glue.c"; sourceTree = "<group>"; };
 		191E605E290B2D6B001A3B7C /* cbuf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = cbuf.c; path = "../Dependencies/libimobiledevice-glue/src/cbuf.c"; sourceTree = "<group>"; };
 		191E605F290B2D6B001A3B7C /* utils.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = utils.c; path = "../Dependencies/libimobiledevice-glue/src/utils.c"; sourceTree = "<group>"; };

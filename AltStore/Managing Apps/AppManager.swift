@@ -747,9 +747,7 @@ extension AppManager
             switch result
             {
             case .failure(let error): context.error = error
-            // case .success(let installationConnection): context.installationConnection = installationConnection
-            case .success(_):
-                print("do nothing")
+            case .success(_): print("App sent over AFC")
             }
         }
         sendAppOperation.addDependency(patchAppOperation)
@@ -1206,9 +1204,7 @@ private extension AppManager
             switch result
             {
             case .failure(let error): context.error = error
-            // case .success(let installationConnection): context.installationConnection = installationConnection
-            case .success(_):
-                print("do nothing")
+            case .success(_): print("App reported as installed")
             }
         }
         sendAppOperation.addDependency(resignAppOperation)
@@ -1667,7 +1663,7 @@ private extension AppManager
                 else
                 {
                     // Not preferred server, so ignore these specific errors and throw serverNotFound instead.
-                    return ConnectionError.serverNotFound
+                    return ConnectionError.serverNotFound as! Error
                 }
                 
             default: return error

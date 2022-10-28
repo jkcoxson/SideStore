@@ -46,24 +46,10 @@ class RefreshAppOperation: ResultOperation<InstalledApp>
             
             DatabaseManager.shared.persistentContainer.performBackgroundTask { (context) in
                 print("Sending refresh app request...")
-                
-                let activeProfiles: Set<String>?
-                if UserDefaults.standard.activeAppsLimit != nil
-                {
-                    // When installing these new profiles, AltServer will remove all non-active profiles to ensure we remain under limit.
-                    let activeApps = InstalledApp.fetchActiveApps(in: context)
-                    activeProfiles = Set(activeApps.flatMap { (installedApp) -> [String] in
-                        let appExtensionProfiles = installedApp.appExtensions.map { $0.resignedBundleIdentifier }
-                        return [installedApp.resignedBundleIdentifier] + appExtensionProfiles
-                    })
-                }
-                
-                print("HERE\n\n\n")
-                print(profiles)
-                print("\n\n\n")
+
                 for p in profiles {
                     do {
-                        try install_provisioning_profile(plist: p.value.data)
+                        let _ = try install_provisioning_profile(plist: p.value.data)
                     } catch {
                         self.finish(.failure(Uhoh.Bad))
                     }
@@ -75,6 +61,10 @@ class RefreshAppOperation: ResultOperation<InstalledApp>
                             return
                         }
                         installedApp.update(provisioningProfile: p.value)
+                        for installedExtension in installedApp.appExtensions {
+                            guard let provisioningProfile = profiles[installedExtension.bundleIdentifier] else { continue }
+                            installedExtension.update(provisioningProfile: provisioningProfile)
+                        }
                         self.finish(.success(installedApp))
                     }
                 }

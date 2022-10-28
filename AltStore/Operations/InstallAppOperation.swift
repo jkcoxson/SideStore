@@ -152,31 +152,8 @@ class InstallAppOperation: ResultOperation<InstalledApp>
                 self.finish(.success(installedApp))
 
             } else {
-                self.finish(.failure("didn't work" as! Error))
+                self.finish(.failure(ALTServerError(.unknown)))
             }
-                        
-//            let request = BeginInstallationRequest(activeProfiles: activeProfiles, bundleIdentifier: installedApp.resignedBundleIdentifier)
-//            connection.send(request) { (result) in
-//                switch result
-//                {
-//                case .failure(let error): self.finish(.failure(error))
-//                case .success:
-//
-//                    self.receive(from: connection) { (result) in
-//                        switch result
-//                        {
-//                        case .success:
-//                            backgroundContext.perform {
-//                                installedApp.refreshedDate = Date()
-//                                self.finish(.success(installedApp))
-//                            }
-//
-//                        case .failure(let error):
-//                            self.finish(.failure(error))
-//                        }
-//                    }
-//                }
-//            }
         }
     }
     
