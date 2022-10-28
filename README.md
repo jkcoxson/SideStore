@@ -19,17 +19,24 @@ The goal of this project is to allow easy and a mostly computerless experience t
 - macOS 10.14.4+ (TBD)
 - Swift 5+
 - Visual Studio Code
+- Rustup
 
 ## Project Overview
 
 ### SideStore
-SideStore is a alternative to AltStore and is a sandboxed iOS application like AltStore. The SideStore app target contains the vast majority of AltStore's functionality, including all the logic for downloading and updating apps through SideStore.
+SideStore is an alternative to AltStore and is a sandboxed iOS application like AltStore. The SideStore app target contains the vast majority of AltStore's functionality, including all the logic for downloading and updating apps through SideStore.
 
-### Netmuxd
-[Netmuxd](https://github.com/jkcoxson/netmuxd) is a program that replaces Usbmuxd to be able to connect over a VPN reliably.  It is programmed in the Rust programming language and it is open source.
+### Minimuxer
+[Minimuxer](https://github.com/jkcoxson/minimuxer) is a program that replaces Usbmuxd to be able to connect over a VPN reliably.  It is programmed in the Rust programming language and it is open source.
+
+### Secret-Tunnel
+[Secret-Tunnel](https://github.com/jkcoxson/Secret-Tunnel) is a program that interfaces with Wireguard to be able to connect over a VPN to communicate with the idevice.  It is programmed in the Rust programming language and it is open source.
 
 ### Roxas
 [Roxas](https://github.com/rileytestut/roxas) is Riley Testut's internal framework from AltStore used across many of their iOS projects, developed to simplify a variety of common tasks used in iOS development.
+
+### Libimobiledevice
+[Libimobiledevice](https://github.com/libimobiledevice/libimobiledevice) is a cross-platform protocol library to communicate with iOS devices.
 
 ## Compilation Instructions
 AltStore and AltServer are both fairly straightforward to compile and run if you're already an iOS or macOS developer. To compile AltStore and/or AltServer:
