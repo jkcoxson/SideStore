@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 
 import AltStoreCore
+import EmotionalDamage
 
 enum RefreshError: LocalizedError
 {
@@ -77,6 +78,13 @@ class BackgroundRefreshAppsOperation: ResultOperation<[String: Result<InstalledA
         self.managedObjectContext.perform {
             self.stopListeningForRunningApps()
         }
+        
+        DispatchQueue.main.async {
+            if UIApplication.shared.applicationState == .background
+                {
+                    stop_em_proxy()
+                }
+        }
               
     }
     
@@ -88,6 +96,7 @@ class BackgroundRefreshAppsOperation: ResultOperation<[String: Result<InstalledA
             self.finish(.failure(RefreshError.noInstalledApps))
             return
         }
+        start_em_proxy(bind_addr: "127.0.0.1:51820")
         
         self.managedObjectContext.perform {
             print("Apps to refresh:", self.installedApps.map(\.bundleIdentifier))

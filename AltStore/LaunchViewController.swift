@@ -38,7 +38,7 @@ class LaunchViewController: RSTLaunchViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        let _: EmotionalDamage = EmotionalDamage(bind_addr: "127.0.0.1:51820")
+        start_em_proxy(bind_addr: "127.0.0.1:51820")
         
         let pf = Bundle.main.object(forInfoDictionaryKey: "ALTPairingFile") as? String
         set_usbmuxd_socket()

@@ -8,6 +8,7 @@
 
 import UIKit
 import AltStoreCore
+import EmotionalDamage
 
 @available(iOS 13, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate
@@ -39,6 +40,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         guard DatabaseManager.shared.isStarted else { return }
         
         AppManager.shared.update()
+        start_em_proxy(bind_addr: "127.0.0.1:51820")
         
         PatreonAPI.shared.refreshPatreonAccount()
     }
@@ -50,6 +52,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         // to restore the scene back to its current state.
         
         guard UIApplication.shared.applicationState == .background else { return }
+        
+        stop_em_proxy()
     }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)

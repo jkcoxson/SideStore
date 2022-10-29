@@ -14,6 +14,7 @@ import Intents
 import AltStoreCore
 import AltSign
 import Roxas
+import EmotionalDamage
 
 extension AppDelegate
 {
@@ -93,10 +94,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
+    
+    func applicationDidEnterBackground(_ application: UIApplication)
+         {
+             stop_em_proxy()
+         }
 
     func applicationWillEnterForeground(_ application: UIApplication)
     {
         AppManager.shared.update()
+        start_em_proxy(bind_addr: "127.0.0.1:51820")
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool
