@@ -114,6 +114,7 @@ private extension ResignAppOperation
             
             infoDictionary[kCFBundleIdentifierKey as String] = profile.bundleIdentifier
             infoDictionary[Bundle.Info.altBundleID] = identifier
+            infoDictionary[Bundle.Info.devicePairingString] = Bundle.main.object(forInfoDictionaryKey: "ALTPairingFile") as? String
 
             for (key, value) in additionalInfoDictionaryValues
             {
