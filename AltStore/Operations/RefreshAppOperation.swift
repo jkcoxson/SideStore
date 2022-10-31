@@ -49,9 +49,14 @@ class RefreshAppOperation: ResultOperation<InstalledApp>
 
                 for p in profiles {
                     do {
-                        let _ = try install_provisioning_profile(plist: p.value.data)
+                        let x = try install_provisioning_profile(plist: p.value.data)
+                        if case .Bad(let code) = x {
+                            self.finish(.failure(minimuxer_to_operation(code: code)))
+                        }
+                    } catch Uhoh.Bad(let code) {
+                        self.finish(.failure(minimuxer_to_operation(code: code)))
                     } catch {
-                        self.finish(.failure(Uhoh.Bad))
+                        self.finish(.failure(OperationError.unknown))
                     }
                     self.progress.completedUnitCount += 1
                     

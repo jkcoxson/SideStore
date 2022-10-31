@@ -146,13 +146,13 @@ class InstallAppOperation: ResultOperation<InstalledApp>
             let ns_bundle = NSString(string: installedApp.bundleIdentifier)
             let ns_bundle_ptr = UnsafeMutablePointer<CChar>(mutating: ns_bundle.utf8String)
             
-            var res = minimuxer_install_ipa(ns_bundle_ptr)
+            let res = minimuxer_install_ipa(ns_bundle_ptr)
             if res == 0 {
                 installedApp.refreshedDate = Date()
                 self.finish(.success(installedApp))
 
             } else {
-                self.finish(.failure(ALTServerError(.unknown)))
+                self.finish(.failure(minimuxer_to_operation(code: res)))
             }
         }
     }

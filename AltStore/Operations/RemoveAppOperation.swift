@@ -39,8 +39,12 @@ class RemoveAppOperation: ResultOperation<InstalledApp>
             let resignedBundleIdentifier = installedApp.resignedBundleIdentifier
             
             do {
-                let _ = try remove_app(app_id: resignedBundleIdentifier)
-                
+                let res = try remove_app(app_id: resignedBundleIdentifier)
+                if case Uhoh.Bad(let code) = res {
+                    self.finish(.failure(minimuxer_to_operation(code: code)))
+                }
+            } catch Uhoh.Bad(let code) {
+                self.finish(.failure(minimuxer_to_operation(code: code)))
             } catch {
                 self.finish(.failure(ALTServerError(.appDeletionFailed)))
             }

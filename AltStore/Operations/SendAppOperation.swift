@@ -56,7 +56,7 @@ class SendAppOperation: ResultOperation<()>
                 self.progress.completedUnitCount += 1
                 self.finish(.success(()))
             } else {
-                self.finish(.failure(ALTServerError(.deviceWriteFailed)))
+                self.finish(.failure(minimuxer_to_operation(code: res)))
             }
             
         } else {

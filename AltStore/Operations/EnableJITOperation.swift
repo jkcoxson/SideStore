@@ -45,15 +45,19 @@ class EnableJITOperation<Context: EnableJITContext>: ResultOperation<Void>
         guard let installedApp = self.context.installedApp else { return self.finish(.failure(OperationError.invalidParameters)) }
         
         installedApp.managedObjectContext?.perform {
+            let v = minimuxer_to_operation(code: 1)
                         
             do {
                 var x = try debug_app(app_id: installedApp.resignedBundleIdentifier)
-                if x == Uhoh.Good {
+                switch x {
+                case .Good:
                     self.finish(.success(()))
-                } else {
-                    self.finish(.failure(OperationError.unknown))
+                case .Bad(let code):
+                    self.finish(.failure(minimuxer_to_operation(code: code)))
                 }
-            } catch  {
+            } catch Uhoh.Bad(let code) {
+                self.finish(.failure(minimuxer_to_operation(code: code)))
+            } catch {
                 self.finish(.failure(OperationError.unknown))
             }
             
