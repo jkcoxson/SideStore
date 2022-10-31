@@ -82,7 +82,7 @@ class BackgroundRefreshAppsOperation: ResultOperation<[String: Result<InstalledA
         DispatchQueue.main.async {
             if UIApplication.shared.applicationState == .background
                 {
-                    stop_em_proxy()
+                    
                 }
         }
               

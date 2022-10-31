@@ -53,7 +53,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate
         
         guard UIApplication.shared.applicationState == .background else { return }
         
-        stop_em_proxy()
+        
     }
     
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)

@@ -97,7 +97,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func applicationDidEnterBackground(_ application: UIApplication)
          {
-             stop_em_proxy()
+             
          }
 
     func applicationWillEnterForeground(_ application: UIApplication)
