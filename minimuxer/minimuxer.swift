@@ -15,7 +15,9 @@ public enum Uhoh: Error {
 public func start_minimuxer(pairing_file: String) {
     let pf = NSString(string: pairing_file)
     let pf_pointer = UnsafeMutablePointer<CChar>(mutating: pf.utf8String)
-    minimuxer_c_start(pf_pointer)
+    let u = NSString(string: getDocumentsDirectory().absoluteString)
+    let u_ptr = UnsafeMutablePointer<CChar>(mutating: u.utf8String)
+    minimuxer_c_start(pf_pointer, u_ptr)
 }
 
 public func set_usbmuxd_socket() {
