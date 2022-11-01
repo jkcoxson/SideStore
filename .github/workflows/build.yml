@@ -23,7 +23,7 @@ jobs:
         with:
           submodules: recursive
       - name: Cache rust
-        id: cache-npm
+        id: cache-rust
         uses: actions/cache@v3
         env:
           cache-name: cache-rust
@@ -34,6 +34,10 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
+      - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        name: List the state of node modules
+        continue-on-error: true
+
       - name: Install dependencies
         run: brew install ldid
       - name: Install rustup
