@@ -22,13 +22,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: recursive
-      - name: Cache rust
-        id: cache-rust
+      - name: Cache rust minimuxer
+        id: cache-rust-minimuxer
         uses: actions/cache@v3
         env:
-          cache-name: cache-rust
+          cache-name: cache-rust-minimuxer
         with:
-          path: ./target
+          path: ./Dependencies/minimuxer/target
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-build-${{ env.cache-name }}-
@@ -38,6 +38,23 @@ jobs:
         name: List the state of node modules
         continue-on-error: true
         run: echo "hi"
+
+      - name: Cache rust em_proxy
+        id: cache-rust-em_proxy
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-rust-em_proxy
+        with:
+          path: ./Dependencies/em_proxy/target
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        name: List the state of node modules
+        continue-on-error: true
+        run: echo "there"
 
       - name: Install dependencies
         run: brew install ldid
