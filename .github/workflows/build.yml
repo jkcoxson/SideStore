@@ -24,7 +24,7 @@ jobs:
           submodules: recursive
 
       - name: Cache rust cargo
-        id: cache-rust-minimuxer
+        id: cache-rust-cargo
         uses: actions/cache@v3
         env:
           cache-name: cache-rust-cargo
