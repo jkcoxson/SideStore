@@ -42,6 +42,7 @@ enum OperationError: LocalizedError
     case detach
     case functionArguments
     case profileInstall
+    case noConnection
     
     var failureReason: String? {
         switch self {
@@ -69,6 +70,7 @@ enum OperationError: LocalizedError
         case .detach: return NSLocalizedString("Unable to detach from the app's process", comment: "")
         case .functionArguments: return NSLocalizedString("A function was passed invalid arguments", comment: "")
         case .profileInstall: return NSLocalizedString("Unable to manage profiles on the device", comment: "")
+        case .noConnection: return NSLocalizedString("Unable to connect to the device, make sure Wireguard is enabled and you're connected to WiFi", comment: "")
         }
     }
     
@@ -154,6 +156,8 @@ func minimuxer_to_operation(code: Int32) -> OperationError {
         return OperationError.profileInstall
     case -19:
         return OperationError.profileInstall
+    case -20:
+        return OperationError.noConnection
     default:
         return OperationError.unknown
     }
