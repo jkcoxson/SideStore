@@ -45,6 +45,7 @@ class LaunchViewController: RSTLaunchViewController
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         start_em_proxy(bind_addr: Consts.Proxy.serverURL)
         
         guard let pf = fetchPairingFile() else {
@@ -85,7 +86,7 @@ class LaunchViewController: RSTLaunchViewController
     func displayError(_ msg: String) {
         print(msg)
         // Create a new alert
-        var dialogMessage = UIAlertController(title: "Error launching SideStore", message: msg, preferredStyle: .alert)
+        let dialogMessage = UIAlertController(title: "Error launching SideStore", message: msg, preferredStyle: .alert)
 
         // Present alert to user
         self.present(dialogMessage, animated: true, completion: nil)
