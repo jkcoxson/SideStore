@@ -29,6 +29,8 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+AltStore.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+ 
 
 ## Obj-C/Swift specific
 *.hmap
